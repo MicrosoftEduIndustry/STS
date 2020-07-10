@@ -31,7 +31,7 @@ This teaching practice refers to learning activities that reflect the nature of 
   This teaching practice relates to technology use by educators and by students for learning purposes. Because the impact of information and communication technologies (ICT) can vary widely depending on its pedagogical application, this construct includes a focus on how ICT is used and not simply whether it is used. For example, the surveys distinguish between basic or rote use of technology and higher level technology use that takes better advantage of technology for deep student learning.
 
 # School Transformation Survey and Report Demo
-[Video Demo](https://demobuilderwebcpptxz.blob.core.windows.net/school-transformation-survey-demo/startdemo.html?ot=false&lan=&guidemodeenabled=false&audioenabled=false)
+[Survey and Report Demo ](https://demobuilderwebcpptxz.blob.core.windows.net/school-transformation-survey-demo/startdemo.html?ot=false&lan=&guidemodeenabled=false&audioenabled=false)
 
 # Learn how to install and use 
 [Deployment Guide](dighobas/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
