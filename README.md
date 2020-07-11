@@ -31,4 +31,4 @@ This teaching practice refers to learning activities that reflect the nature of 
 [Survey and Report Demo ](https://demobuilderwebcpptxz.blob.core.windows.net/school-transformation-survey-demo/startdemo.html?ot=false&lan=&guidemodeenabled=false&audioenabled=false)
 
 # Learn how to install and use 
-[Deployment Guide](dighobas/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
+[Deployment Guide](https://github.com/dighobas/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
