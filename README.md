@@ -1,6 +1,3 @@
-# STS
-Microsoft School Transformation Survey
-
 # Microsoft in Education School Transformation Survey Report
 Transforming teaching and learning to align with critical 21st century skills is a goal for many educators around the globe. Today’s learners need to develop cognitive and non-cognitive skills to create, collaborate, solve real-world problems, construct and represent knowledge in a range of ways, including digitally.
 
