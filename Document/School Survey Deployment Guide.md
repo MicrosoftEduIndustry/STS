@@ -256,16 +256,16 @@ The appId is shown as follows. Copy and paste it into the appId variable in the 
 **Variable \#5 - Name of admin group**: If you created the admin group using the name
 “SchoolSurveyAdmin”, you can skip this step, if not, update this section with the admin group name you created.
 
-1.  Go back to the app, **Open Data sources panel**. There are multiple types of
+3.  Go back to the app, **Open Data sources panel**. There are multiple types of
     connections that the app uses, seven of them need to be **re-connected**,
     to the tables in the **Excel files** located in your OneDrive see below:
 
     ![](media/ebdc542fc2b8b0f7272c79dcce80e5bd.png)
 
-2.  **Remove** the seven data sources showed in previous step by **clicking ellipses**
+4.  **Remove** the seven data sources showed in previous step by **clicking ellipses**
     behind those seven, choose “Remove” in pop menu.
 
-3.  Connect to OneDrive from Data sources panel under **“Connectors”** group, find
+5.  Connect to OneDrive from Data sources panel under **“Connectors”** group, find
     **OneDrive for Business** from the group.
 
     **Click this connector**. The connection probably already exists,
