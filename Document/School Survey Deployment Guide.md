@@ -37,7 +37,7 @@ Follow the steps below to upload the necessary files to OneDrive:
 
     ![](media/OneDriveSchoolSurveyFolder.png)
 
-4.  Now it's time to upload the AppData folder with files. Click the chevron next to **Upload** and choose **Folder**.
+4.  Now it's time to upload the AppData folder with the files. Click the chevron next to **Upload** and choose **Folder**.
 
     ![](media/UploadOneDrive01.png)
     
