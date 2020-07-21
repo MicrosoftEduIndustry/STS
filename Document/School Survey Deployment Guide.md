@@ -326,8 +326,9 @@ Save and publish the App
 Import the scheduled Flow 
 ==========================
 
-There are **two flow** in the app, one is an **Instant type**, the other is a **Scheduled
-type**. The instant flow is packed into app’s package, the scheduled one is not which means that 
+There are **two flows** in the app, one is an **Instant flow**, the other is a **Scheduled
+flow
+**. The instant flow is packed into app’s package, the scheduled one is not which means that 
 you need to use the **zip package** to **import** it into your environment.
 
 1.  Open <https://flow.microsoft.com/> in a browser, sign in with you work
