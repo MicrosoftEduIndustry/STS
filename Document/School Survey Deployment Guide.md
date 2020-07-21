@@ -242,7 +242,7 @@ file, then paste the link as the value of reportLink.
 ![](media/fcc1d826ff97e4c5804d4638d8a564c6.png)
 
 \#3: **reportHelpLink:** Copy and paste the link of [How to use Power
-BI](https://canviz.visualstudio.com/_git/School%20Transformation%20Survey?path=%2FDocument%2FHow%20to%20use%20PowerBI.md).
+BI](https://github.com/dighobas/STS/blob/master/Document/How%20to%20use%20PowerBI.md).
 
 \#4: **appId:** Go to Apps list of PowerApps in your tenant, find the app you are editing and **click
 Details**.
