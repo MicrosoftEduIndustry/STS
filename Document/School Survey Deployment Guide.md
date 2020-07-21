@@ -220,7 +220,7 @@ If this is the first time you have opened the app (it should be) you will see th
 Configure the App
 =================
 
-Wait for a moments and you’ll see the edit interface.
+Wait for a moment and you’ll see the edit interface.
 
 1.  Open screen **Tree view** from left menus.
 
