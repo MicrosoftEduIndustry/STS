@@ -228,23 +228,23 @@ Wait for a moment and you’ll see the edit interface.
 
 >   Set values for global variables.
 
-Select **“App”**, In formula bar, select **“OnStart”**, then stretch the fx input area like below.
+2. Select **“App”**, In formula bar, select **“OnStart”**, then stretch the fx input area like below.
 
 There are five variables that need to be set, input the proper value in double quotes.
 
 ![](media/5f9457b48f7f4c9e178b412f9600a69c.png)
 
-\#1: **districtName:** Input the district name of school.
+Variable \#1: **districtName:** Input the district name of school.
 
-\#2: **reportLink:** Go to OneDrive online, copy the link of Power BI template
+Variable \#2: **reportLink:** Go to OneDrive online, copy the link of Power BI template
 file, then paste the link as the value of reportLink.
 
 ![](media/fcc1d826ff97e4c5804d4638d8a564c6.png)
 
-\#3: **reportHelpLink:** Copy and paste the link of [How to use Power
+Variable \#3: **reportHelpLink:** Copy and paste the link of [How to use Power
 BI](https://github.com/dighobas/STS/blob/master/Document/How%20to%20use%20PowerBI.md).
 
-\#4: **appId:** Go to Apps list of PowerApps in your tenant, find the app you are editing and **click
+Variable \#4: **appId:** Go to Apps list of PowerApps in your tenant, find the app you are editing and **click
 Details**.
 
 ![](media/0db57b466c4a7bfc263572c54a06118a.png)
@@ -253,7 +253,7 @@ The appId is shown as follows. Copy and paste it into the appId variable in the 
 
 ![](media/af4bb1901532f440c87f5c866bf4407d.png)
 
-\#5: **Name of admin group**: If you created the admin group using the name
+Variable \#5: **Name of admin group**: If you created the admin group using the name
 “SchoolSurveyAdmin”, you can skip this step, if not, update this section with the admin group name you created.
 
 1.  Go back to the app, **Open Data sources panel**. There are multiple types of
