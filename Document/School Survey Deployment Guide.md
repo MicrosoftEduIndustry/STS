@@ -41,9 +41,7 @@ Follow the steps below to upload the necessary files to OneDrive:
 
     ![](media/UploadOneDrive03.png)
 
-5.  When the upload is done, open the **SchoolSurvey** folder and verify the files and folders have been uploaded.
-
-6.  When you are all done the folder structure and files in the folders will look like this:
+5.  When the upload is done, open the **SchoolSurvey** folder and verify the files and folders have been uploaded. The folder structure and files in the folders will look like this:
 
     ![](media/99a955026f737dbe9af78f7c89394a04.png)
 
