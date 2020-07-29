@@ -74,17 +74,19 @@ Next, create an Azure Active Directory Security Group for the administrators of 
 
     ![](media/488a165dd3ec0734004f6160b9740472.png)
 
-8.  Add members to the group you created. If you didn’t add members when you created the group, or if you need to add new members in the future, follow these steps.
+8.  Add members to the group you created by clicking on **No members selected** then choose the members you want to add from the **Add members** pane then click **Select**.
 
-9.  Go to the group list, search and find the group, select the group, and finally, click **Members**.
+    ![](media/AzureAddMembers.png)
 
-    ![](media/2ec57c530ae6cc20c8f6b3bd8c31689b.png)
+**NOTE** If you didn’t add members when you created the group or if you need to add new members in the future, follow these steps.
 
-10.  Click **+ Add members**, then search for and select a member in your organization to add.
+9.  From Azure Active Directory, navigate to **Groups** which will take you to **All Groups**. Find the **SchoolSurveyAdmin** and then click on the group to open the Group Overview page.
 
-    ![](media/b4b8910faf133a23033be87963a239bf.png)
+    ![](media/AzureADFindGroup.png)
 
-11.  Click **Select** to add them to the group.
+10.  Click **Members**, then click **+ Add members**. Search and select all members you'd like to add from within your organization then click **Select** to add them to the group.
+
+   ![](media/AzureADGroupAddMembers.png)
 
 Enable the Power Apps component framework
 =====================================
