@@ -29,33 +29,21 @@ Follow the steps below to upload the necessary files to OneDrive:
 
     ![](media/OneDriveMyFiles.png)
 
-2.  Now create the SchoolSurvey root folder. Click on **New** > **Folder**.
+2.  Now upload the SchoolSurvey root folder to OneDrive. Click on **Upload** > **Folder**.
 
     ![](media/OneDriveNewFolder01.png)
-
-3. Name the folder **SchoolSurvey** and click **Create**.
-
-    ![](media/OneDriveSchoolSurveyFolder.png)
-
-4.  Now it's time to upload the AppData folder with the files. Click the chevron next to **Upload** and choose **Folder**.
-
-    ![](media/UploadOneDrive01.png)
     
-5.  Browse to the **SchoolSurvey** folder where you downloaded and extracted for this project.  Select the **AppData** subfolder, then click **Select Folder**.
+3.  Browse to the **SchoolSurvey** folder where you downloaded and extracted for this project.  Select the **SchoolSurvey** subfolder, then click **Upload**.
 
-    ![](media/UploadOneDriveAppData.png)
+    ![](media/UploadOneDrive02.png)
 
-6.  When the upload is done, open the **AppData** folder and verify the files have been uploaded.
+4. When prompted to confirm uploading of files, click **Upload**.
 
-7.  Navigate back up to the **SchoolSurvey** root folder and create a new folder called **Reports**.
+    ![](media/UploadOneDrive03.png)
 
-8.  Open the **Reports** folder and create two more folders under it, one named **District** and the other named **TemplateReport**.
+5.  When the upload is done, open the **SchoolSurvey** folder and verify the files and folders have been uploaded.
 
-9.  Open the **TemplateReport** folder and upload the Power BI template file (**SchoolTransformationSurvey.pbix**) and JSON file (**SampleReport.json**).
-
-    These files are located in the **Packages/SchoolSurvey/Reports/TemplateReport** folder in the project files.
-
-    When you are all done the folder structure and files in the folders will look like this:
+6.  When you are all done the folder structure and files in the folders will look like this:
 
     ![](media/99a955026f737dbe9af78f7c89394a04.png)
 
@@ -68,37 +56,37 @@ Next, create an Azure Active Directory Security Group for the administrators of 
 
 1.  Login to the Azure portal. <https://portal.azure.com>
 
-1.  Select **Azure Active Directory**.
+2.  Select **Azure Active Directory**.
 
     ![](media/0d699aebbc7ed2c59c04b8b0b30f1831.png)
 
-1.  Select **Groups**, then click **+ New group**.
+3.  Select **Groups**, then click **+ New group**.
 
     ![](media/fd22fdc67dd72be58702e6c9ca8077c0.png)
 
     ![](media/f0e0777978730206963bdb854e8d0507.png)
 
-1.  Set **Group type** to **Security**.
-1.  In the **Group name**. textbox, enter SchoolSurveyAdmin.
+4.  Set **Group type** to **Security**.
+5.  In the **Group name**. textbox, enter SchoolSurveyAdmin.
 
     >**Note:** If you change the Group name to be something other than SchoolSurveyAdmin you’ll have to update it in Power App.
 
-1. Add a description if you like.
-1. You can also add members to this group in this dialog or add them after the group is created.
+6. Add a description if you like.
+7. You can also add members to this group in this dialog or add them after the group is created.
 
     ![](media/488a165dd3ec0734004f6160b9740472.png)
 
-1.  Add members to the group you created. If you didn’t add members when you created the group, or if you need to add new members in the future, follow these steps.
+8.  Add members to the group you created. If you didn’t add members when you created the group, or if you need to add new members in the future, follow these steps.
 
-1.  Go to the group list, search and find the group, select the group, and finally, click **Members**.
+9.  Go to the group list, search and find the group, select the group, and finally, click **Members**.
 
     ![](media/2ec57c530ae6cc20c8f6b3bd8c31689b.png)
 
-1.  Click **+ Add members**, then search for and select a member in your organization to add.
+10.  Click **+ Add members**, then search for and select a member in your organization to add.
 
     ![](media/b4b8910faf133a23033be87963a239bf.png)
 
-1.  Click **Select** to add them to the group.
+11.  Click **Select** to add them to the group.
 
 Enable the Power Apps component framework
 =====================================
@@ -107,17 +95,17 @@ Now, turn on the ability for the Power Apps in the environment to run Power Apps
 
 1.  In a web browser, open <https://web.powerapps.com>.
 
-1.  Click the settings icon and select **Admin center**.
+2.  Click the settings icon and select **Admin center**.
 
     ![](media/3f14cc6f00b2c273dc21e28214b59905.png)
 
-1.  In the Environment list, go to settings page for the target environment where you wish to deploy the Power App.
+3.  In the Environment list, go to settings page for the target environment where you wish to deploy the Power App.
 
     ![](media/45d48cf74df6c7b99d78be04f74ef3cc.png)
 
-1.  Go to **Product** \> **Features**.
+4.  Go to **Product** \> **Features**.
 
-1.  Turn on the **Power Apps component framework for canvas apps**, then click **Save**.
+5.  Turn on the **Power Apps component framework for canvas apps**, then click **Save**.
 
     ![](media/26b5538cc4997e68df0f4761ae4f8b56.png)
 
@@ -128,19 +116,19 @@ Next, import the custom PCF component that implements the copy to clipboard func
 
 1.  In a web browser, open <https://make.powerapps.com> and go to **Solutions**.
 
-1.  Click **Import**.
+2.  Click **Import**.
 
     ![](media/10dc81d01f0eb05375a49b68588e2feb.png)
 
-1.  Choose the file named **CopyTextSolution.zip** in the project files you downloaded, then click **Next**.
+3.  Choose the file named **CopyTextSolution.zip** in the project files you downloaded, then click **Next**.
 
     ![](media/35a4acbd8b61946184157ae10d5a190b.png)
 
-1.  Click **Import**.
+4.  Click **Import**.
 
     ![](media/eedb988999483d61a487e6f95cb24ad8.png)
 
-1.  Click **Close**.
+5.  Click **Close**.
 
     ![](media/39bef943a93fd50a4bccfda85592af09.png)
 
@@ -151,11 +139,11 @@ Next, install the Power App in the target environment.
 
 1.  In a web browser, open <https://make.powerapps.com> and go to **Apps**.
 
-1.  Click **Import canvas app**.
+2.  Click **Import canvas app**.
 
     ![](media/eeec895c3206dd79de9b7e1226ae1b52.png)
 
-1.  Browse to the **SchoolTransformationSurvery.zip** file in the project files you downloaded and select it, then click **Upload**.
+3.  Browse to the **SchoolTransformationSurvery.zip** file in the project files you downloaded and select it, then click **Upload**.
 
     ![](media/a994e41c61938c96b05a44fe3f55caa2.png)
 
@@ -165,9 +153,9 @@ Next, install the Power App in the target environment.
 
     Since this package is new to your environment, the **IMPORT SETUP** value needs to be changed from **Update** to **Create as new** for **BOTH** the Power App and Flow.
     
-1.  In the App row in the list, in the **IMPORT SETUP** column, click **Update**. Then, in the popup panel, select **Create as new** and click **Save**. (See the screenshot below for more details.)
+4.  In the App row in the list, in the **IMPORT SETUP** column, click **Update**. Then, in the popup panel, select **Create as new** and click **Save**. (See the screenshot below for more details.)
 
-1.  Now do the exact same thing in the Flow row in the list, in the **IMPORT SETUP** column, click **Update**. Then, in the popup panel, select **Create as new** and click **Save**.
+5.  Now do the exact same thing in the Flow row in the list, in the **IMPORT SETUP** column, click **Update**. Then, in the popup panel, select **Create as new** and click **Save**.
     
     >**Note: ** Make sure both the App and Flow items in the package have the IMPORT STEP column value Create as new.
 
@@ -175,7 +163,7 @@ Next, install the Power App in the target environment.
 
     Now the **Import** bottom should be enabled.  
     
-1.  Click **Import**.
+6.  Click **Import**.
 
     ![](media/17fbd97599315f4efc07292df5e489e8.png)
 
@@ -183,7 +171,7 @@ Next, install the Power App in the target environment.
 
     ![](media/3c86617ded7cff3351bccac8133bfdb8.png)
 
-1.  When this prompt appears, click **Open app**.  This prompt is referring to the copy to clipboard component in the Power App that allows users to click a button and copy the data from the Power App to their clipboard.  This button does not provide access to read from the clipboard.  This is a standard prompt that appears anytime a Power App uses a custom Power Apps PCF Control, no matter what the control does.
+7.  When this prompt appears, click **Open app**.  This prompt is referring to the copy to clipboard component in the Power App that allows users to click a button and copy the data from the Power App to their clipboard.  This button does not provide access to read from the clipboard.  This is a standard prompt that appears anytime a Power App uses a custom Power Apps PCF Control, no matter what the control does.
 
     ![](media/6890a2e298b6aeab64b7e5b7a2d3c1e9.png)
 
@@ -211,11 +199,11 @@ You will see this screen appear.
 If this is the first time you have opened the app (it should be) you will see the following screen appear when you try to sign in. 
 
 1. Select the **Consent on behalf of your organization checkbox**.
-1. Click **Accept**.
+2. Click **Accept**.
 
 ![](media/15c129b836170de2f1bafa9c1d822535.png)
 
-1. Then, back in the screen that shows the 3 connectors, click **Allow**.
+3. Then, back in the screen that shows the 3 connectors, click **Allow**.
 
 Configure the App
 =================
