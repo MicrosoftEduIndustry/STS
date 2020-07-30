@@ -45,7 +45,7 @@ Follow the steps below to upload the necessary files to OneDrive:
 
     ![](media/99a955026f737dbe9af78f7c89394a04.png)
 
-    > **Note:** If the file structure doesn’t look like this or if you are having issues uploading the entire folder with subfolders, please create the folders and upload/move files to match this structure. Record the path of the files that you created and uploaded, you will need the paths in subsequent steps.
+    > **Note:** If the file structure doesn’t look like this or if you are having issues uploading the entire folder with subfolders, please create the folders and upload/move files to match this structure. 
 
 Create a security group in Azure 
 =================================
