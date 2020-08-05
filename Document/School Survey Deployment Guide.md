@@ -115,7 +115,7 @@ STEP 04: Import CopyToClipboard component
 ===================================================
 
 Next, import the custom PCF component that implements the copy to clipboard functionality.
-## Power Apps Portal - Solutions
+## Power Apps Portal: Solutions
 1.  In a web browser, open <https://make.powerapps.com> and go to **Solutions**.
 
 2.  Click **Import**.
@@ -138,7 +138,7 @@ STEP 05: Import the Power App
 ==================================
 
 Next, install the Power App in the target environment.
-## Power Apps Portal - Apps
+## Power Apps Portal: Apps
 1.  In a web browser, open <https://make.powerapps.com> and go to **Apps**.
 
 2.  Click **Import canvas app**.
