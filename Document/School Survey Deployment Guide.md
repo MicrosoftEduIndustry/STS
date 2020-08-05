@@ -46,7 +46,7 @@ Follow the steps below to upload the necessary files to OneDrive:
 
     ![](media/99a955026f737dbe9af78f7c89394a04.png)
 
-    > **Note:** If the file structure doesn’t look like this or if you are having issues uploading the entire folder with subfolders, please create the folders and upload/move files to match this structure. 
+    > **NOTE:** If the file structure doesn’t look like this or if you are having issues uploading the entire folder with subfolders, please create the folders and upload/move files to match this structure. 
 
 # STEP 02: Create a security group in Azure
 
@@ -67,7 +67,7 @@ Next, create an Azure Active Directory Security Group for the administrators of 
 4.  Set **Group type** to **Security**.
 5.  In the **Group name**. textbox, enter SchoolSurveyAdmin.
 
-    >**Note:** If you change the Group name to be something other than SchoolSurveyAdmin you’ll have to update it in Power App.
+    >**NOTE:** If you change the Group name to be something other than SchoolSurveyAdmin you’ll have to update it in Power App.
 
 6. Add a description if you like.
 7. You can also add members to this group in this dialog or add them after the group is created.
@@ -158,7 +158,7 @@ Next, install the Power App in the target environment.
 
 5.  Now do the exact same thing in the Flow row in the list, in the **IMPORT SETUP** column, click **Update**. Then, in the popup panel, select **Create as new** and click **Save**.
     
-    >**Note: ** Make sure both the App and Flow items in the package have the IMPORT STEP column value Create as new.
+    >**NOTE: ** Make sure both the App and Flow items in the package have the IMPORT STEP column value Create as new.
 
     ![](media/f66d2928ca90b740b70251f6c2d51a54.png)
 
