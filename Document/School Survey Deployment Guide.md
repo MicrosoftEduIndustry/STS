@@ -173,7 +173,15 @@ Next, install the Power App in the target environment.
 
     ![](media/3c86617ded7cff3351bccac8133bfdb8.png)
 
-7.  When this prompt appears, click **Open app**.  This prompt is referring to the copy to clipboard component in the Power App that allows users to click a button and copy the data from the Power App to their clipboard.  This button does not provide access to read from the clipboard.  This is a standard prompt that appears anytime a Power App uses a custom Power Apps PCF Control, no matter what the control does.
+> **NOTE:** At the time this Power Apps solution was created, Power Apps componment framework was in beta but it's now been released. However, due to a regression bug the imported Power App must be opened with the previous release of Power Apps Studio.  
+  
+### Open Power Apps Studio Previous Release
+  
+7. Navigate to https://create.powerapps.com/v3.20064.23.155867258/studio/
+
+8. Open the School Transformation Survey Power App.
+  
+9.  When this prompt appears, click **Open app**.  This prompt is referring to the copy to clipboard component in the Power App that allows users to click a button and copy the data from the Power App to their clipboard.  This button does not provide access to read from the clipboard.  This is a standard prompt that appears anytime a Power App uses a custom Power Apps PCF Control, no matter what the control does.
 
     ![](media/6890a2e298b6aeab64b7e5b7a2d3c1e9.png)
 
