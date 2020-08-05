@@ -25,7 +25,7 @@ STEP 01: Upload SchoolSurvey folder and files to OneDrive
 Follow the steps below to upload the necessary files to OneDrive:
 
 > **NOTE:** Ensure you unzipped the SchoolSurvey.zip folder you downloaded in the prerequisites solution files steps.
-
+## Microsoft 365 & OneDrive
 1.  Login to **Office.com** <https://www.office.com> and navigate to **OneDrive**. Select **My files** ensuring you are seeing **Files**.
 
     ![](media/STS01.png)
@@ -51,7 +51,7 @@ Follow the steps below to upload the necessary files to OneDrive:
 STEP 02: Create a security group in Azure
 ===================================================  
 Next, create an Azure Active Directory Security Group for the administrators of the app.
-
+## Azure Portal
 1.  Login to the Azure portal. <https://portal.azure.com>
 
 2.  Select **Azure Active Directory**.
@@ -79,7 +79,7 @@ Next, create an Azure Active Directory Security Group for the administrators of 
     ![](media/AzureAddMembers.png)
   
 
-## OPTIONAL STEP: Adding New Members to Group
+### OPTIONAL STEP: Adding New Members to Group
 > **NOTE** If you didn’t add members when you created the group or if you need to add new members in the future, follow these steps.
 1.  From Azure Active Directory, navigate to **Groups** which will take you to **All Groups**. Find the **SchoolSurveyAdmin** and then click on the group to open the Group Overview page.
 
@@ -93,7 +93,7 @@ STEP 03: Enable the Power Apps component framework
 ====================================================================
 
 Now, turn on the ability for the Power Apps in the environment to run Power Apps Component framework controls.
-
+## Power Apps Portal Admin Center
 1.  In a web browser, open <https://web.powerapps.com>.
 
 2.  Click the settings icon and select **Admin center**.
@@ -114,7 +114,7 @@ STEP 04: Import CopyToClipboard component
 ===================================================
 
 Next, import the custom PCF component that implements the copy to clipboard functionality.
-
+## Power Apps Portal
 1.  In a web browser, open <https://make.powerapps.com> and go to **Solutions**.
 
 2.  Click **Import**.
@@ -137,7 +137,7 @@ STEP 05: Import the Power App
 ==================================
 
 Next, install the Power App in the target environment.
-
+## Power Apps Portal
 1.  In a web browser, open <https://make.powerapps.com> and go to **Apps**.
 
 2.  Click **Import canvas app**.
@@ -296,7 +296,7 @@ The appId is shown as follows. Copy and paste it into the appId variable in the 
 
 STEP 08: Save and publish the App
 ==================================
-
+## Power Apps Studio
 1.  Click **“File”** on the top menus in Edit interface of the app, then click **Save**
     on the left menu, optionally you can input version note for save and then **click Save**.
 
