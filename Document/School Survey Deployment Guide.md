@@ -354,7 +354,9 @@ There are **two flows** in the app, one is an **Instant flow**, the other is a *
 flow
 **. The instant flow is packed into app’s package, the scheduled one is not which means that 
 you need to use the **zip package** to **import** it into your environment.
+
 ## Power Automate: Import Flow
+
 1.  Open <https://flow.microsoft.com/> in a browser, sign in with you work
     account.
 
@@ -370,6 +372,8 @@ you need to use the **zip package** to **import** it into your environment.
 4.  Make sure it looks like below:
 
     ![](media/7fabcd53bde3ec9f2f8ba487e91e0d5a.png)
+
+## Power Automate: Update Flow Connections
 
 5.  **Update connections** for Related resources in this flow.
 
@@ -395,8 +399,8 @@ you need to use the **zip package** to **import** it into your environment.
 
 STEP 10: Configure the scheduled Flow
 ========================================
-
-On Flow interface
+## Power Automate: Edit imported Flow
+On Flow interface:
 
 1.  **Set time zone** in Recurrence.
 
