@@ -1,5 +1,5 @@
-# Prerequisites
-
+Prerequisites
+=================
 ## M365 Accounts and Subcriptions
 1. A Microsoft 365 account with the following services:
 
@@ -20,8 +20,8 @@
 | Zip    | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)          | Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate. - Download and leave zipped.                |
 | Zip    | [CopyTextSolution.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/CopyTextSolution.zip)           | A customized component that implements the copy to clipboard feature.  - Download and leave zipped.                   |
 
-# STEP 01: Upload SchoolSurvey folder and files to OneDrive
-
+STEP 01: Upload SchoolSurvey folder and files to OneDrive
+====================================================================
 Follow the steps below to upload the necessary files to OneDrive:
 
 > **NOTE:** Ensure you unzipped the SchoolSurvey.zip folder you downloaded in the prerequisites solution files steps.
@@ -48,8 +48,8 @@ Follow the steps below to upload the necessary files to OneDrive:
 
     > **NOTE:** If the file structure doesn’t look like this or if you are having issues uploading the entire folder with subfolders, please create the folders and upload/move files to match this structure. 
 
-# STEP 02: Create a security group in Azure
-
+STEP 02: Create a security group in Azure
+===================================================  
 Next, create an Azure Active Directory Security Group for the administrators of the app.
 
 1.  Login to the Azure portal. <https://portal.azure.com>
@@ -89,8 +89,8 @@ Next, create an Azure Active Directory Security Group for the administrators of 
 
    ![](media/AzureADGroupAddMembers.png)
 
-# STEP 03: Enable the Power Apps component framework
-
+STEP 03: Enable the Power Apps component framework
+====================================================================
 
 Now, turn on the ability for the Power Apps in the environment to run Power Apps Component framework controls.
 
@@ -110,8 +110,8 @@ Now, turn on the ability for the Power Apps in the environment to run Power Apps
 
     ![](media/26b5538cc4997e68df0f4761ae4f8b56.png)
 
-Import CopyToClipboard component
-================================
+STEP 04: Import CopyToClipboard component
+===================================================
 
 Next, import the custom PCF component that implements the copy to clipboard functionality.
 
@@ -133,8 +133,8 @@ Next, import the custom PCF component that implements the copy to clipboard func
 
     ![](media/39bef943a93fd50a4bccfda85592af09.png)
 
-Import the Power App
-====================================
+STEP 05: Import the Power App
+==================================
 
 Next, install the Power App in the target environment.
 
@@ -180,8 +180,8 @@ Next, install the Power App in the target environment.
 
     ![](media/cc76e3d83144eb0707e13e476a9f0ba3.png)
 
-Configure Connector Permissions
-===============================
+STEP 06: Configure Connector Permissions
+=============================================
 
 Next, you will need to configure the permissions for the connectors the Power App uses to communicate with Azure Active Directory, Office 365 User Data, and OneDrive for Business.
 
@@ -206,8 +206,8 @@ If this is the first time you have opened the app (it should be) you will see th
 
 3. Then, back in the screen that shows the 3 connectors, click **Allow**.
 
-Configure the App
-=================
+STEP 07: Configure the App
+===========================
 
 Wait for a moment and you’ll see the edit interface.
 
@@ -294,8 +294,8 @@ The appId is shown as follows. Copy and paste it into the appId variable in the 
 | SurveyResults.xlsx | SurveyResults                            |
 | Surveys.xlsx       | Surveys                                  |
 
-Save and publish the App
-========================
+STEP 08: Save and publish the App
+==================================
 
 1.  Click **“File”** on the top menus in Edit interface of the app, then click **Save**
     on the left menu, optionally you can input version note for save and then **click Save**.
@@ -312,8 +312,8 @@ Save and publish the App
 
     The app is now ready to be used.
 
-Import the scheduled Flow 
-==========================
+STEP 09: Import the scheduled Flow 
+====================================
 
 There are **two flows** in the app, one is an **Instant flow**, the other is a **Scheduled
 flow
@@ -358,8 +358,8 @@ you need to use the **zip package** to **import** it into your environment.
 
     ![](media/e8b55978d8ff50a36b5724084eae3c55.png)
 
-Configure the scheduled Flow
-============================
+STEP 10: Configure the scheduled Flow
+========================================
 
 On Flow interface
 
@@ -423,8 +423,8 @@ On Flow interface
 
     ![](media/cd872768ee2b4348ff1dbd6976d14a86.png)
 
-Share the app and its data source
-=================================
+STEP 11: Share the app and its data source
+===========================================
 
 You need to share the app and its data source to someone who want to access the
 app.
