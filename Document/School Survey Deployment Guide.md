@@ -1,6 +1,6 @@
-Prerequisites
-=============
+# Prerequisites
 
+## M365 Accounts and Subcriptions
 1. A Microsoft 365 account with the following services:
 
     * OneDrive for Business
@@ -10,12 +10,12 @@ Prerequisites
   
   
 2. An Azure subscription
-
+## Solution Files
 3. Download the following items:
 
 | **Type**| **Name**                      | **Description**                                                            |
 |--------|--------------------------------|----------------------------------------------------------------------------|
-| Zip | [SchoolSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolSurvey.zip)                   | This zip file needs to be extracted and the folder with the contents need to be uploaded to OneDrive. |
+| Zip | [SchoolSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolSurvey.zip)                   | Download this zip file and extract the files to your local hard drive. The SchoolSurvey folder and all it's contents will need to be uploaded to OneDrive detailed in STEP 01. |
 | Zip    | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate.             |
 | Zip    | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)          | Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.                 |
 | Zip    | [CopyTextSolution.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/CopyTextSolution.zip)           | A customized component that implements the copy to clipboard feature.                     |
