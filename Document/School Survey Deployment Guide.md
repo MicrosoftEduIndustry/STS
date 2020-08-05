@@ -25,7 +25,7 @@ STEP 01: Upload SchoolSurvey folder and files to OneDrive
 Follow the steps below to upload the necessary files to OneDrive:
 
 > **NOTE:** Ensure you unzipped the SchoolSurvey.zip folder you downloaded in the prerequisites solution files steps.
-## Microsoft 365 & OneDrive
+## Microsoft 365 & OneDrive: Upload files
 1.  Login to **Office.com** <https://www.office.com> and navigate to **OneDrive**. Select **My files** ensuring you are seeing **Files**.
 
     ![](media/STS01.png)
@@ -73,7 +73,7 @@ Next, create an Azure Active Directory Security Group for the administrators of 
 7. You can also add members to this group in this dialog or add them after the group is created.
 
     ![](media/488a165dd3ec0734004f6160b9740472.png)
-
+### Azure Active Directory: Add Members to Group
 8.  Add members to the group you created by clicking on **No members selected** then choose the members you want to add from the **Add members** pane then click **Select**.
 
     ![](media/AzureAddMembers.png)
