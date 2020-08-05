@@ -120,6 +120,8 @@ In order to use the Power Apps componenent framework, you will need to turn on t
 7. The **State** status will show **Ready** when it's finished. If it does not show ready, wait a few and then click **Refresh** again.
 
     ![](media/STSEnviroment05.png)
+    
+### Environment: Enable component framework feature
 
 8.  In the Environment list, go to **Settings** page for the environment that you want the Power App deployed to.
 
