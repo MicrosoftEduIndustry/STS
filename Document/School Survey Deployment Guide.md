@@ -111,6 +111,8 @@ In order to use the Power Apps componenent framework, you will need to turn on t
 
 5. From the add database panel, ensure the Language and Currency are set and then click **Add**. 
 
+    ![](media/STSEnviroment03.png)
+
 6. Wait for the database to be created. You will see a status of **PreparingInstance**. Click **Refresh**.
 
     ![](media/STSEnviroment04.png)
@@ -119,7 +121,7 @@ In order to use the Power Apps componenent framework, you will need to turn on t
 
     ![](media/STSEnviroment05.png)
 
-8.  In the Environment list, go to settings page for the environment that you want the Power App deployed to.
+8.  In the Environment list, go to **Settings** page for the environment that you want the Power App deployed to.
 
     ![](media/STSEnviroment06.png)
 
