@@ -69,7 +69,7 @@ Next, create an Azure Active Directory Security Group for the administrators of 
 
     > **NOTE:** If you change the Group name to be something other than SchoolSurveyAdmin you’ll have to update it in Power App.
 
-6. Add a description if you like.
+6. Add a description if preferred (optional).
 7. You can also add members to this group in this dialog or add them after the group is created.
 
     ![](media/488a165dd3ec0734004f6160b9740472.png)
