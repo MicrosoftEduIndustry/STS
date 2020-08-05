@@ -169,7 +169,7 @@ Next, install the Power App in the target environment.
 
     ![](media/17fbd97599315f4efc07292df5e489e8.png)
 
-    Wait until the import is done.  On the success page, click **Open app** to open the Power App in Edit Mode.
+    Wait until the import is done.  On the success page, you will see a link to **Open app** but **DO NOT CLICK TO OPEN** and instead continue to follow the next steps below to open the app.
 
     ![](media/3c86617ded7cff3351bccac8133bfdb8.png)
 
@@ -207,7 +207,7 @@ If this is the first time you have opened the app (it should be) you will see th
 
 3. Then, back in the screen that shows the 3 connectors, click **Allow**.
 
-STEP 07: Configure the App
+STEP 07: Configure the Power App
 ===========================
 
 Wait for a moment and you’ll see the edit interface.
