@@ -92,7 +92,8 @@ Next, create an Azure Active Directory Security Group for the administrators of 
 STEP 03: Enable the Power Apps component framework
 ====================================================================
 
-Now, turn on the ability for the Power Apps in the environment to run Power Apps Component framework controls.
+In order to use the Power Apps componenent framework, you will need to turn on the Power Apps Component framework controls feature for your Power Apps environment. To enable this feature, follow the steps below:    
+
 ## Power Apps Portal Admin Center
 1.  In a web browser, open <https://web.powerapps.com>.
 
