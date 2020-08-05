@@ -16,9 +16,9 @@
 | **Type**| **Name**                      | **Description**                                                            |
 |--------|--------------------------------|----------------------------------------------------------------------------|
 | Zip | [SchoolSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolSurvey.zip)                   | Download this zip file and extract the files to your local hard drive. The SchoolSurvey folder and all it's contents will need to be uploaded to OneDrive detailed in STEP 01. |
-| Zip    | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate.             |
-| Zip    | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)          | Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.                 |
-| Zip    | [CopyTextSolution.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/CopyTextSolution.zip)           | A customized component that implements the copy to clipboard feature.                     |
+| Zip    | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate. - Download and leave zipped.            |
+| Zip    | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)          | Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate. - Download and leave zipped.                |
+| Zip    | [CopyTextSolution.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/CopyTextSolution.zip)           | A customized component that implements the copy to clipboard feature.  - Download and leave zipped.                   |
 
 # STEP 01: Upload SchoolSurvey folder and files to OneDrive
 
