@@ -467,8 +467,11 @@ STEP 11: Share the app and its data source
 
 You need to share the app and its data source to someone who want to access the
 app.
+## Power App Portal: Share the School Transformation Survey Power App
 
-1.  Share the app
+1.  Go back to the Power App portal and navigate to **Apps**. 
+
+2. To share the app:
 
     Open the pop menus of your app, **click Share** to open Share panel.
 
@@ -480,7 +483,7 @@ app.
 
     ![](media/b3ce0c26ab7823d1e8fb18e34727a028.png)
 
-2.  Share data source of the app
+3.  Share data source of the app
 
     Go to **OneDrive folder** of the app, hover on **AppData**, make share icon showed
     then click it.
