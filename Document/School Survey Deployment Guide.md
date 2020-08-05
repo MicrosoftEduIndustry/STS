@@ -494,7 +494,9 @@ app.
 
 STEP 12 (Optional): How to bulk add schools using the Excel sheet
 ==============================================
-## OneDrive & Excel
+You can bulk add schools if needed by updating the Excel file.
+
+## OneDrive: Update Excel file
 1.  Open the folder **AppData** in OneDrive which holds **Schools.xlsx**.
 
 ![](media/ed0b9cb0365b307faed130e31081fb28.png)
@@ -532,7 +534,8 @@ STEP 12 (Optional): How to bulk add schools using the Excel sheet
 
 STEP 13 (Optional): How to embed the Power BI report into Teams
 ==========================================
-## Microsoft Teams
+You can easily embed Power BI reports into Microsoft Teams. If you would like to add the STS Power BI report to a Team follow the steps below:
+## Microsoft Teams: Add Power BI tab
 1.  Open your Microsoft Teams app, click Teams or Chat from left tab bar.
 
 ![](media/ba358b9418078f1a040398b404e60d62.png)
