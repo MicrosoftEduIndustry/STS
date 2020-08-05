@@ -24,6 +24,8 @@
 
 Follow the steps below to upload the necessary files to OneDrive:
 
+> **NOTE:** Ensure you unzipped the SchoolSurvey.zip folder you downloaded in the prerequisites solution files steps.
+
 1.  Login to **Office.com** <https://www.office.com> and navigate to **OneDrive**. Select **My files** ensuring you are seeing **Files**.
 
     ![](media/STS01.png)
