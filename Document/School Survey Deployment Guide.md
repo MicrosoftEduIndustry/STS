@@ -100,14 +100,32 @@ In order to use the Power Apps componenent framework, you will need to turn on t
 2.  Click the settings icon and select **Admin center**.
 
     ![](media/3f14cc6f00b2c273dc21e28214b59905.png)
+### Environment: Add database
+3.  In the Environment list, click on the Environment where you wish to deploy the Power App.
 
-3.  In the Environment list, go to settings page for the target environment where you wish to deploy the Power App.
+    ![](media/STSEnviroment01.png)
+
+4.  If a database does not exist for your enviroment click on **+ Add database**.
+
+    ![](media/STSEnviroment02.png)
+
+5. From the add database panel, ensure the Language and Currency are set and then click **Add**. 
+
+6. Wait for the database to be created. You will see a status of **PreparingInstance**. Click **Refresh**.
+
+    ![](media/STSEnviroment04.png)
+    
+7. The **State** status will show **Ready** when it's finished. If it does not show ready, wait a few and then click **Refresh** again.
+
+    ![](media/STSEnviroment05.png)
+
+8.  In the Environment list, go to settings page for the target environment where you wish to deploy the Power App.
 
     ![](media/45d48cf74df6c7b99d78be04f74ef3cc.png)
 
-4.  Go to **Product** \> **Features**.
+9.  Go to **Product** \> **Features**.
 
-5.  Turn on the **Power Apps component framework for canvas apps**, then click **Save**.
+10.  Turn on the **Power Apps component framework for canvas apps**, then click **Save**.
 
     ![](media/26b5538cc4997e68df0f4761ae4f8b56.png)
 
