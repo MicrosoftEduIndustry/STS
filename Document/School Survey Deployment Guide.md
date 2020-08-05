@@ -460,3 +460,70 @@ app.
     ![](media/f4f4457f7c108bb922ae5432a2d6508f.png)
 
     ![](media/e00cd0ed58b21e2767be3eced760b745.png)
+
+STEP 12: How to build add schools using the Excel sheet
+==============================================
+
+1.  Open the folder **AppData** in OneDrive which holds **Schools.xlsx**.
+
+![](media/ed0b9cb0365b307faed130e31081fb28.png)
+
+2.  Open Schools.xlsx, start to add/edit/delete records in the file.
+
+![](media/48ecc9219b5d32c7d9b26b4450927c63.png)
+
+>   **Note:**
+
+>   Required fields: **SchoolId, SchoolName, SchoolSize, SchoolType, GradeLevel,
+>   AcademicPrograms, TeacherRespondents, LeaderRespondents**. Please make these
+>   fields filled and have valid values, otherwise you’ll not be able to see
+>   them in the school list in the app.
+
+>   **SchoolId** is a primary key field, please make sure there is no duplicate
+>   values.
+
+>   Empty fields: **Country, State, City, \_PowerAppsId\_**.
+
+>   Although you can edit/delete school data, but you’d better not do it from
+>   Excel, because in some cases school can not be edited or deleted.
+
+3.  Save and check the data.
+
+>   Excel online can automatically save the data you modified. Make sure the tag
+>   change from Saving to Saved.
+
+![](media/0ef68b7e0044925c32d163f6b99bb82c.png)
+
+>   Close the excel file, open the app by admin account and navigate to Schools.
+>   You’ll see the data you added.
+
+![](media/7706a497a9356a3fa3935628bd29bbd1.png)
+
+STEP 13: How to embed the Power BI report into Teams
+==========================================
+
+1.  Open your Microsoft Teams app, click Teams or Chat from left tab bar.
+
+![](media/ba358b9418078f1a040398b404e60d62.png)
+
+2.  In a team screen or a chat screen, click add icon.
+
+![](media/1ad32b94db4bc7965244fa7208d315e4.png)
+
+3.  In the prompt window, search then choose Power BI,
+
+![](media/b251c38f9974106fef89fe6207c7040e.png)
+
+4.  In the Power BI prompt window, input a name for the tab you are adding,
+    collapse the workspace which holds the report you are adding, then choose
+    the report, click save.
+
+![](media/0742bf82e04b066346d794427faae4ea.png)
+
+5.  After clicking Save, you are gonna see a new tab added, and the report
+    showed below the tab.
+
+>   Note: Make sure members in the team or the chat have permissions to access
+>   the report.
+
+![](media/82b89f40fbf37ecb70b6cbfb27473aa1.png)
