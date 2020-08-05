@@ -183,11 +183,11 @@ Next, install the Power App in the target environment.
   
 9.  When this prompt appears, click **Open app**.  This prompt is referring to the copy to clipboard component in the Power App that allows users to click a button and copy the data from the Power App to their clipboard.  This button does not provide access to read from the clipboard.  This is a standard prompt that appears anytime a Power App uses a custom Power Apps PCF Control, no matter what the control does.
 
-    ![](media/6890a2e298b6aeab64b7e5b7a2d3c1e9.png)
+    ![](media/STSOpenApp01.png)
 
     Click **Update**.
 
-    ![](media/cc76e3d83144eb0707e13e476a9f0ba3.png)
+    ![](media/STSOpenApp02.png)
 
 STEP 06: Configure Connector Permissions
 =============================================
