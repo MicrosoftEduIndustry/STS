@@ -336,11 +336,12 @@ STEP 08: Save and publish the App
 
     ![](media/66da57fd4a7be2f93efb3b778ce14495.png)
 ## Power Apps Studio: Publish App
-    Click **Publish**
+
+2.  Click **Publish**
 
     ![](media/f2b242c79dda582ed9066b55c78fcc91.png)
 
-    Click **“Publish this version”** in the pop window.
+3.  Click **“Publish this version”** in the pop window.
 
     ![](media/bb517b17748712cd9b5fa1b045e361af.png)
 
