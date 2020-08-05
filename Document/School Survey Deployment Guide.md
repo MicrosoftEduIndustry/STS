@@ -53,7 +53,7 @@ STEP 02: Create a security group in Azure
 Next, create an Azure Active Directory Security Group for the administrators of the app.
 ## Azure Portal
 1.  Login to the Azure portal. <https://portal.azure.com>
-
+### Azure Active Directory: Group Creation
 2.  Select **Azure Active Directory**.
 
     ![](media/0d699aebbc7ed2c59c04b8b0b30f1831.png)
