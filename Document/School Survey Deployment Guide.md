@@ -177,7 +177,7 @@ Next, install the Power App in the target environment.
   
 ### Open Power Apps Studio Previous Release
   
-7. Navigate to [https://create.powerapps.com/v3.20064.23.155867258/studio/](https://create.powerapps.com/v3.20064.23.155867258/studio/)
+7. Navigate to <a href="https://create.powerapps.com/v3.20064.23.155867258/studio/" target="_blank">https://create.powerapps.com/v3.20064.23.155867258/studio/</a>
 
 8. Open the School Transformation Survey Power App.
   
