@@ -15,13 +15,12 @@ Prerequisites
 
 | **Type**| **Name**                      | **Description**                                                            |
 |--------|--------------------------------|----------------------------------------------------------------------------|
-| Folder | SchoolSurvey                   | This folder and the contents need to be uploaded to OneDrive. |
-| Zip    | SchoolTransformationSurvey.zip | Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate.             |
-| Zip    | WriteSurveyToJSON.zip          | Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.                 |
-| Zip    | CopyTextSolution.zip           | A customized component that implements the copy to clipboard feature.                     |
+| Zip | [SchoolSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolSurvey.zip)                   | This zip file needs to be extracted and the folder with the contents need to be uploaded to OneDrive. |
+| Zip    | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate.             |
+| Zip    | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)          | Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.                 |
+| Zip    | [CopyTextSolution.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/CopyTextSolution.zip)           | A customized component that implements the copy to clipboard feature.                     |
 
-Upload SchoolSurvey folder and files to OneDrive
-================================================
+# STEP 01: Upload SchoolSurvey folder and files to OneDrive
 
 Follow the steps below to upload the necessary files to OneDrive:
 
@@ -47,8 +46,7 @@ Follow the steps below to upload the necessary files to OneDrive:
 
     > **Note:** If the file structure doesn’t look like this or if you are having issues uploading the entire folder with subfolders, please create the folders and upload/move files to match this structure. 
 
-Create a security group in Azure 
-=================================
+# STEP 02: Create a security group in Azure
 
 Next, create an Azure Active Directory Security Group for the administrators of the app.
 
@@ -77,19 +75,20 @@ Next, create an Azure Active Directory Security Group for the administrators of 
 8.  Add members to the group you created by clicking on **No members selected** then choose the members you want to add from the **Add members** pane then click **Select**.
 
     ![](media/AzureAddMembers.png)
+  
 
+## OPTIONAL STEP: Adding New Members to Group
 **NOTE** If you didn’t add members when you created the group or if you need to add new members in the future, follow these steps.
-
-9.  From Azure Active Directory, navigate to **Groups** which will take you to **All Groups**. Find the **SchoolSurveyAdmin** and then click on the group to open the Group Overview page.
+1.  From Azure Active Directory, navigate to **Groups** which will take you to **All Groups**. Find the **SchoolSurveyAdmin** and then click on the group to open the Group Overview page.
 
     ![](media/AzureADFindGroup.png)
 
-10.  Click **Members**, then click **+ Add members**. Search and select all members you'd like to add from within your organization then click **Select** to add them to the group.
+2.  Click **Members**, then click **+ Add members**. Search and select all members you'd like to add from within your organization then click **Select** to add them to the group.
 
    ![](media/AzureADGroupAddMembers.png)
 
-Enable the Power Apps component framework
-=====================================
+# STEP 03: Enable the Power Apps component framework
+
 
 Now, turn on the ability for the Power Apps in the environment to run Power Apps Component framework controls.
 
