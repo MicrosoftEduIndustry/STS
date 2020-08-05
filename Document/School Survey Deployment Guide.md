@@ -330,12 +330,12 @@ The appId is shown as follows. Copy and paste it into the appId variable in the 
 
 STEP 08: Save and publish the App
 ==================================
-## Power Apps Studio
+## Power Apps Studio: Save App
 1.  Click **“File”** on the top menus in Edit interface of the app, then click **Save**
     on the left menu, optionally you can input version note for save and then **click Save**.
 
     ![](media/66da57fd4a7be2f93efb3b778ce14495.png)
-
+## Power Apps Studio: Publish App
     Click **Publish**
 
     ![](media/f2b242c79dda582ed9066b55c78fcc91.png)
