@@ -354,7 +354,7 @@ There are **two flows** in the app, one is an **Instant flow**, the other is a *
 flow
 **. The instant flow is packed into app’s package, the scheduled one is not which means that 
 you need to use the **zip package** to **import** it into your environment.
-
+## Power Automate: Import Flow
 1.  Open <https://flow.microsoft.com/> in a browser, sign in with you work
     account.
 
