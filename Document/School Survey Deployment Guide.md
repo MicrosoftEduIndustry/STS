@@ -67,7 +67,7 @@ Next, create an Azure Active Directory Security Group for the administrators of 
 4.  Set **Group type** to **Security**.
 5.  In the **Group name**. textbox, enter SchoolSurveyAdmin.
 
-    >**NOTE:** If you change the Group name to be something other than SchoolSurveyAdmin you’ll have to update it in Power App.
+    > **NOTE:** If you change the Group name to be something other than SchoolSurveyAdmin you’ll have to update it in Power App.
 
 6. Add a description if you like.
 7. You can also add members to this group in this dialog or add them after the group is created.
@@ -80,7 +80,7 @@ Next, create an Azure Active Directory Security Group for the administrators of 
   
 
 ## OPTIONAL STEP: Adding New Members to Group
-**NOTE** If you didn’t add members when you created the group or if you need to add new members in the future, follow these steps.
+> **NOTE** If you didn’t add members when you created the group or if you need to add new members in the future, follow these steps.
 1.  From Azure Active Directory, navigate to **Groups** which will take you to **All Groups**. Find the **SchoolSurveyAdmin** and then click on the group to open the Group Overview page.
 
     ![](media/AzureADFindGroup.png)
@@ -158,7 +158,7 @@ Next, install the Power App in the target environment.
 
 5.  Now do the exact same thing in the Flow row in the list, in the **IMPORT SETUP** column, click **Update**. Then, in the popup panel, select **Create as new** and click **Save**.
     
-    >**NOTE: ** Make sure both the App and Flow items in the package have the IMPORT STEP column value Create as new.
+    > **NOTE: ** Make sure both the App and Flow items in the package have the IMPORT STEP column value Create as new.
 
     ![](media/f66d2928ca90b740b70251f6c2d51a54.png)
 
