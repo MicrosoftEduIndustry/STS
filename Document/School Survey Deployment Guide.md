@@ -469,7 +469,7 @@ app.
 
     ![](media/e00cd0ed58b21e2767be3eced760b745.png)
 
-STEP 12: How to build add schools using the Excel sheet
+STEP 12 (Optional): How to bulk add schools using the Excel sheet
 ==============================================
 ## OneDrive & Excel
 1.  Open the folder **AppData** in OneDrive which holds **Schools.xlsx**.
@@ -507,7 +507,7 @@ STEP 12: How to build add schools using the Excel sheet
 
 ![](media/7706a497a9356a3fa3935628bd29bbd1.png)
 
-STEP 13: How to embed the Power BI report into Teams
+STEP 13 (Optional): How to embed the Power BI report into Teams
 ==========================================
 ## Microsoft Teams
 1.  Open your Microsoft Teams app, click Teams or Chat from left tab bar.
