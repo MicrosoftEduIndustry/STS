@@ -158,7 +158,7 @@ Next, install the Power App in the target environment.
 
 5.  Now do the exact same thing in the Flow row in the list, in the **IMPORT SETUP** column, click **Update**. Then, in the popup panel, select **Create as new** and click **Save**.
     
-    > **NOTE: ** Make sure both the App and Flow items in the package have the IMPORT STEP column value Create as new.
+    > **NOTE:** Make sure both the App and Flow items in the package have the IMPORT STEP column value Create as new.
 
     ![](media/f66d2928ca90b740b70251f6c2d51a54.png)
 
