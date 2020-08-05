@@ -119,15 +119,18 @@ In order to use the Power Apps componenent framework, you will need to turn on t
 
     ![](media/STSEnviroment05.png)
 
-8.  In the Environment list, go to settings page for the target environment where you wish to deploy the Power App.
+8.  In the Environment list, go to settings page for the environment that you want the Power App deployed to.
 
-    ![](media/45d48cf74df6c7b99d78be04f74ef3cc.png)
+    ![](media/STSEnviroment06.png)
 
 9.  Go to **Product** \> **Features**.
 
+    ![](media/STSEnviroment07.png)
+
 10.  Turn on the **Power Apps component framework for canvas apps**, then click **Save**.
 
-    ![](media/26b5538cc4997e68df0f4761ae4f8b56.png)
+   ![](media/26b5538cc4997e68df0f4761ae4f8b56.png)
+
 
 STEP 04: Import CopyToClipboard component
 ===================================================
