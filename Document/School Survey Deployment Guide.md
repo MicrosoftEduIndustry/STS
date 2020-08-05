@@ -25,21 +25,21 @@ Upload SchoolSurvey folder and files to OneDrive
 
 Follow the steps below to upload the necessary files to OneDrive:
 
-1.  Login to **OneDrive** and select **My files** ensuring you are seeing **Files**.
+1.  Login to **Office.com** <https://www.office.com> and navigate to **OneDrive**. Select **My files** ensuring you are seeing **Files**.
 
-    ![](media/OneDriveMyFiles.png)
+    ![](media/STS01.png)
 
 2.  Now upload the SchoolSurvey root folder to OneDrive. Click on **Upload** > **Folder**.
 
-    ![](media/UploadOneDrive01.png)
+    ![](media/STS02.png)
     
 3.  Browse to the **SchoolSurvey** folder where you downloaded and extracted for this project.  Select the **SchoolSurvey** subfolder, then click **Upload**.
 
-    ![](media/UploadOneDrive02.png)
+    ![](media/STS03.png)
 
 4. When prompted to confirm uploading of files, click **Upload**.
 
-    ![](media/UploadOneDrive03.png)
+    ![](media/STS04.png)
 
 5.  When the upload is done, open the **SchoolSurvey** folder and verify the files and folders have been uploaded. The folder structure and files in the folders will look like this:
 
