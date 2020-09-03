@@ -5,7 +5,7 @@
 [Deployment Guide](https://github.com/dighobas/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
 
 # Survey Questions in Spanish 
-  Survey questions in Spanish (https://github.com/MicrosoftEduIndustry/STS/blob/master/SurveyContent_Spanish.xlsx)
+  [Survey questions in Spanish](https://github.com/dighobas/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
 
 # About Microsoft School Transformation Survey
 Transforming teaching and learning to align with critical 21st century skills is a goal for many educators around the globe. Today’s learners need to develop cognitive and non-cognitive skills to create, collaborate, solve real-world problems, construct and represent knowledge in a range of ways, including digitally.
