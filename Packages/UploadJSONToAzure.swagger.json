@@ -1,0 +1,56 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "UploadJSONToAzure",
+    "description": "Upload JSON content to a file which is held in a Azure website.",
+    "version": "1.0"
+  },
+  "host": "schooltransformationsurvey.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/Home/PostJsonFromFlow": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Upload JSON to an Azure website",
+        "description": "Get content from onedrive, then post it to an Azure website",
+        "operationId": "UploadJSONAzureWebsite",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "content": {
+                  "type": "string",
+                  "description": "content"
+                },
+                "filename": {
+                  "type": "string",
+                  "description": "filename"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
