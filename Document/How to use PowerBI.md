@@ -5,27 +5,32 @@ Prerequisites
     version.
 
     Power BI Desktop is hosted in **Microsoft Store**, launch Store, input
-    “Power BI” in search box, find it in the search result. Install it in your
+    "Power BI" in search box, find it in the search result. Install it in your
     machine.
 
     ![](media/af63758d79c25e97c5b143f38ed4b64f.png)
 
-2.  Get the JSON file of the report you’ll use. Login to OneDrive, find the
-    folder of the project, go to “**Reports**” folder. The “**District**” folder
-    contains all surveys’ result of the whole district, and other folders is for
-    each school.
+2.  **For NON-Global shared data**, Get the JSON file of the report you’ll use.
+    Login to OneDrive, find the folder of the project, go to "**Reports**"
+    folder. The "**District**" folder contains all surveys’ result of the whole
+    district, and other folders is for each school.
 
     Download the json file you need.
 
+3.  **For Global shared data**, no need to download json file.
+
 Load JSON in Power BI Desktop
 =============================
+
+**For NON-Global shared data**:
 
 1.  Launch Power BI Desktop, and sign in your organizational account.
 
     ![](media/25c5e53741c6b4e5e8fc0574652d425c.png)
 
 2.  Open **SchoolTransformationSurvey.pbix** in Power BI Desktop. You can get it
-    from the GitHub.
+    from the GitHub, its path like:
+    {GitHub}\\OneDriveContainer\\SchoolSurvey\\Reports\\TemplateReport\\SchoolTransformationSurvey.pbix
 
 3.  You’ll see pages and reports, its source is sample data, you need to change
     the data source to the json file you got in [Prerequisites
@@ -36,7 +41,7 @@ Load JSON in Power BI Desktop
 
     ![](media/e40fb2927ace3aeb084476da182066cb.png)
 
-4.  In Data source settings, click “**Change source**…”
+4.  In Data source settings, click "**Change source**…"
 
     ![](media/bafca2b1fd059daa81e39b3e9f45a93c.png)
 
@@ -51,6 +56,21 @@ Load JSON in Power BI Desktop
     You’ll see updated report.
 
     ![](media/97c7ac149d4819c482c0b5e0352cd7cf.png)
+
+**For Global shared data**
+
+1.  Run the app in PowerApps, login as admin member. Go to Admin configuration
+    screen. Click Download PBI Global Report link in Global Sharing section.
+
+    ![](media/f90c15d04a637f70cc3c1d6d29d64394.png)
+
+    If the Global Sharing section is invisible that means no global shareable data
+    generated.
+
+2.  Open **SchoolTransformationSurvey.pbix** you downloaded in Power BI Desktop.
+    Click Refresh in top menu bar to get the latest global shareable data.
+
+    ![](media/fd1e13744a77ab6c2b7392fa5c0a48ab.png)
 
 Create workspace for displaying and sharing reports
 ===================================================
@@ -95,7 +115,7 @@ Share reports
 
     Then click Share. User will receive a email with report link \#3.
 
-    Note: If the user you share to is a guest in your tenant, the user cannot
+    **Note**: If the user you share to is a guest in your tenant, the user cannot
     re-share the report even you grant re-share to him. As a guest user, only
     Read-Only access.
 
@@ -117,8 +137,8 @@ After you load survey data to Power BI Desktop successfully, you can export all
 reports to a PDF.
 
 1.  Open **SchoolTransformationSurvey.pbix** in Power BI Desktop, Click
-    “**File**” from top menu list, click “**Export**” from pop up menu, then
-    click “**Export to PDF**”.
+    "**File**" from top menu list, click "**Export**" from pop up menu, then
+    click "**Export to PDF**".
 
     Wait for a few minutes, this procedure will generate **all reports** to a
     PDF file.
