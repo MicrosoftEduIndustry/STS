@@ -1,309 +1,233 @@
 Prerequisites
-=================
+=============
+
 ## M365 Accounts and Subcriptions
-1. A Microsoft 365 account with the following services:
 
-    * OneDrive for Business
-    * Power Apps
-    * Power BI (Free for personal workspace or Pro for shared workspaces and dashboards)
-    * Power BI Desktop installed  
-  
-  
-2. An Azure subscription
+1.  A Microsoft 365 account with the following services:
+
+    -   SharePoint Client Component(To install in your computer)
+
+    -   Windows PowerShell (Installed by default in Windows)
+
+    -   OneDrive for Business
+
+    -   Power Apps
+
+    -   Power BI (Free for personal workspace or Pro for shared workspaces and
+        dashboards)
+
+    -   Power BI Desktop installed
+
+2.  An Azure subscription
 ## Solution Files
-3. Download the following items:
+3.  Download the following items:
 
-| **Type**| **Name**                      | **Description**                                                            |
-|--------|--------------------------------|----------------------------------------------------------------------------|
-| Zip | [SchoolSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolSurvey.zip)                   | Download and extract zipped files: The SchoolSurvey folder and all it's contents will need to be uploaded to OneDrive detailed in STEP 01. |
-| Zip    | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Download and leave zipped: Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate.            |
-| Zip    | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)          | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.                |
-| Zip    | [CopyTextSolution.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/CopyTextSolution.zip)           | Download and leave zipped: A customized component that implements the copy to clipboard feature.                   |
-
-STEP 01: Upload SchoolSurvey folder and files to OneDrive
-====================================================================
-Follow the steps below to upload the necessary files to OneDrive:
-
-> **NOTE:** Ensure you unzipped the SchoolSurvey.zip folder you downloaded in the prerequisites solution files steps.
-## Microsoft 365 & OneDrive: Upload files
-1.  Login to **Office.com** <https://www.office.com> and navigate to **OneDrive**. Select **My files** ensuring you are seeing **Files**.
-
-    ![](media/STS01.png)
-
-2.  Now upload the SchoolSurvey root folder to OneDrive. Click on **Upload** > **Folder**.
-
-    ![](media/STS02.png)
-    
-3.  Browse to the **SchoolSurvey** folder where you downloaded and extracted for this project.  Select the **SchoolSurvey** subfolder, then click **Upload**.
-
-    ![](media/STS03.png)
-
-4. When prompted to confirm uploading of files, click **Upload**.
-
-    ![](media/STS04.png)
-
-5.  When the upload is done, open the **SchoolSurvey** folder and verify the files and folders have been uploaded. The folder structure and files in the folders will look like this:
-
-    ![](media/99a955026f737dbe9af78f7c89394a04.png)
-
-    > **NOTE:** If the file structure doesn’t look like this or if you are having issues uploading the entire folder with subfolders, please create the folders and upload/move files to match this structure. 
-
-STEP 02: Create a security group in Azure
-===================================================  
-Next, create an Azure Active Directory Security Group for the administrators of the app.
-## Azure Portal
-1.  Login to the Azure portal. <https://portal.azure.com>
-### Azure Active Directory: Group Creation
-2.  Select **Azure Active Directory**.
-
-    ![](media/0d699aebbc7ed2c59c04b8b0b30f1831.png)
-
-3.  Select **Groups**, then click **+ New group**.
-
-    ![](media/fd22fdc67dd72be58702e6c9ca8077c0.png)
-
-    ![](media/f0e0777978730206963bdb854e8d0507.png)
-
-4.  Set **Group type** to **Security**.
-5.  In the **Group name**. textbox, enter SchoolSurveyAdmin.
-
-    > **NOTE:** If you change the Group name to be something other than SchoolSurveyAdmin you’ll have to update it in Power App.
-
-6. Add a description if preferred (optional).
-7. You can also add members to this group in this dialog or add them after the group is created.
-
-    ![](media/488a165dd3ec0734004f6160b9740472.png)
-### Azure Active Directory: Add Members to Group
-8.  Add members to the group you created by clicking on **No members selected** then choose the members you want to add from the **Add members** pane then click **Select**.
-
-    ![](media/AzureAddMembers.png)
-  
-
-### OPTIONAL STEP: Adding New Members to Group
-> **NOTE** If you didn’t add members when you created the group or if you need to add new members in the future, follow these steps.
-1.  From Azure Active Directory, navigate to **Groups** which will take you to **All Groups**. Find the **SchoolSurveyAdmin** and then click on the group to open the Group Overview page.
-
-    ![](media/AzureADFindGroup.png)
-
-2.  Click **Members**, then click **+ Add members**. Search and select all members you'd like to add from within your organization then click **Select** to add them to the group.
-
-   ![](media/AzureADGroupAddMembers.png)
-
-STEP 03: Enable the Power Apps component framework
-====================================================================
-
-In order to use the Power Apps componenent framework, you will need to turn on the Power Apps Component framework controls feature for your Power Apps environment. To enable this feature, follow the steps below:    
-
-## Power Apps Portal Admin Center
-1.  In a web browser, open <https://web.powerapps.com>.
-
-2.  Click the settings icon and select **Admin center**.
-
-    ![](media/3f14cc6f00b2c273dc21e28214b59905.png)
-### Environment: Add database
-3.  In the Environment list, click on the Environment where you wish to deploy the Power App.
-
-    ![](media/STSEnviroment01.png)
-
-4.  If a database does not exist for your enviroment click on **+ Add database**.
-
-    ![](media/STSEnviroment02.png)
-
-5. From the add database panel, ensure the Language and Currency are set and then click **Add**. 
-
-    ![](media/STSEnviroment03.png)
-
-6. Wait for the database to be created. You will see a status of **PreparingInstance**. Click **Refresh**.
-
-    ![](media/STSEnviroment04.png)
-    
-7. The **State** status will show **Ready** when it's finished. If it does not show ready, wait a few and then click **Refresh** again.
-
-    ![](media/STSEnviroment05.png)
-    
-### Environment: Enable component framework feature
-
-8.  In the Environment list, go to **Settings** page for the environment that you want the Power App deployed to.
-
-    ![](media/STSEnviroment06.png)
-
-9.  Go to **Product** \> **Features**.
-
-    ![](media/STSEnviroment07.png)
-
-10.  Turn on the **Power Apps component framework for canvas apps**, then click **Save**.
-
-   ![](media/26b5538cc4997e68df0f4761ae4f8b56.png)
+    | **Type** | **Name**                                                                                                                                                   | **Description**                                                                                                                            |
+    |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+    | Zip      | [OneDriveContainer.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/OneDriveContainer.zip)                   | Download and extract zipped files: The SchoolSurvey folder and all it's contents will need to be uploaded to OneDrive.                     |
+    | Zip      | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Download and leave zipped: Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate.    |
+    | Zip      | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)                   | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.           |
+    | Script   | [automate.ps1](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/automate.ps1)                                     | Power Shell script which is executed to complete uploading files in OneDriveContainer to OneDrive and creating security group for the app. |
+    | Script   | [UploadJSONToAzure.swagger.json](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/UploadJSONToAzure.swagger.json) | A json file which will be used for creating a custom connector for uploading Global shared data to your Azure website.                     |
 
 
-STEP 04: Import CopyToClipboard component
-===================================================
+Execute powershell script
+=========================
 
-Next, import the custom PCF component that implements the copy to clipboard functionality.
-## Power Apps Portal: Solutions
-1.  In a web browser, open <https://make.powerapps.com> and go to **Solutions**.
+Follow the steps below to upload the necessary files to OneDrive and create a
+security group for the app.
 
-2.  Click **Import**.
+>   **NOTE:** Ensure you unzipped the OneDriveContainer.zip folder you
+>   downloaded in the prerequisites solution files steps.
 
-    ![](media/10dc81d01f0eb05375a49b68588e2feb.png)
+1.  Download [SharePoint Online Client
+    Components](https://www.microsoft.com/en-us/download/details.aspx?id=42038).
+    In the download prompt page, choose a one you want then download the file.
 
-3.  Choose the file named **CopyTextSolution.zip** in the project files you downloaded, then click **Next**.
+    ![](media/f7921f3a29eae339b9fa732ec6121603.png)
 
-    ![](media/35a4acbd8b61946184157ae10d5a190b.png)
+2.  Run the installer you downloaded. Once you have installed the downloaded
+    setup, you can proceed next steps.
 
-4.  Click **Import**.
+3.  Open "automate.ps1" using Notepad or VS Code(recommend).
 
-    ![](media/eedb988999483d61a487e6f95cb24ad8.png)
+4.  Replace values of variables in the beginning of the script file which are in
+    between "Initialize variables start" and "Initialize variables end". Here is
+    an example for these values.
 
-5.  Click **Close**.
+    | Variable         | Value                                                              |
+    |------------------|--------------------------------------------------------------------|
+    | \$LocalFolder    | C:\\\\Package\\OneDriveContainer                                   |
+    | \$AdminAccount   | admin\@dodo.onmicrosoft.com                                        |
+    | \$AdminPass      | 12345678                                                           |
+    | \$OneDriveURL    | https://dodo-my.sharepoint.com/personal/admin_dodo_onmicrosoft_com |
+    | \$GroupName      | SchoolSurveyAdmin                                                  |
+    | \$MembersInGroup | <abc@dodo.onmicrosoft.com>, <edf@dodo.onmicrosoft.com>             |
 
-    ![](media/39bef943a93fd50a4bccfda85592af09.png)
+5.  Save the script file. Find and right click windows powershell in your
+    computer, choosing Run as administrator.
 
-STEP 05: Import the Power App
-==================================
+6.  Redirect to the folder which you put automate.ps1 using cd command.
+
+    ![](media/9c15c69f2793d9e72941329e9fc00795.png)
+
+    Then execute the script file by inputting .\\automate.ps1
+
+    ![](media/a5d558b3743b6b76d4840311d709c1e2.png)
+
+    During the script executing, you may encounter information like below:
+
+    ![](media/350145c03cd90f1967de9441c3c3ef98.png)
+
+    ![](media/bd5012bd1b0c8499238c1539948cbede.png)
+
+    For both, enter Y or y to proceed.
+
+    **NOTE:**
+
+    You may encounter this error as below when executing the script.
+
+    ![](media/edf0453373a5ae261814eb5370b7a8d5.png)
+
+    This is a security measure in PowerShell to prevent malicious scripts from
+    running and potentially harming the system. Of course the script you are running
+    will not harm your system. To fix it, please execute the script below to change
+    the execution policy in PowerShell.
+
+    **Set-ExecutionPolicy RemoteSigned -Scope LocalMachine**
+
+    ![](media/38aad1889bfc6c2b811a94b6ea62fe20.png)
+
+7.  To check scripts work fine, Login to OneDrive check if the files have
+    uploaded under root directory and the files structure is same with in
+    OneDriveContainer(NOT including itself).
+
+8.  Login to Azure, go to Azure Active Directory -\>Groups check if the group
+    has been created and its members added.
+
+    ![](media/dac08392a937f46d4af67f523eeae2ea.png)
+
+    And if you want to add more members to the group, go into the group detail
+    page.
+
+    ![](media/89a65c540d3a47ad991b68e0ed2e8a78.png)
+
+Import the Power App
+====================
 
 Next, install the Power App in the target environment.
-## Power Apps Portal: Apps
+
 1.  In a web browser, open <https://make.powerapps.com> and go to **Apps**.
 
 2.  Click **Import canvas app**.
 
     ![](media/eeec895c3206dd79de9b7e1226ae1b52.png)
 
-3.  Browse to the **SchoolTransformationSurvery.zip** file in the project files you downloaded and select it, then click **Upload**.
+3.  Browse to the **SchoolTransformationSurvery.zip** file in the project files
+    you downloaded and select it, then click **Upload**.
 
     ![](media/a994e41c61938c96b05a44fe3f55caa2.png)
 
-    After a few moments, you’ll see the import package screen that looks like the one show below. Make sure there are two items in the package, one is the Power App, the other is the Flow which the Power App uses.
+    After a few moments, you’ll see the import package screen that looks like
+    the one show below. Make sure there are two items in the package, one is the
+    Power App, the other is the Flow which the Power App uses.
 
     ![](media/4cb8fb2a3c42121141bdd8135b8ce562.png)
 
-    Since this package is new to your environment, the **IMPORT SETUP** value needs to be changed from **Update** to **Create as new** for **BOTH** the Power App and Flow.
-    
-4.  In the App row in the list, in the **IMPORT SETUP** column, click **Update**. Then, in the popup panel, select **Create as new** and click **Save**. (See the screenshot below for more details.)
+    Since this package is new to your environment, the **IMPORT SETUP** value
+    needs to be changed from **Update** to **Create as new** for **BOTH** the
+    Power App and Flow.
 
-5.  Now do the exact same thing in the Flow row in the list, in the **IMPORT SETUP** column, click **Update**. Then, in the popup panel, select **Create as new** and click **Save**.
-    
-    > **NOTE:** Make sure both the App and Flow items in the package have the IMPORT STEP column value Create as new.
+4.  In the App row in the list, in the **IMPORT SETUP** column, click
+    **Update**. Then, in the popup panel, select **Create as new** and click
+    **Save**. (See the screenshot below for more details.)
+
+5.  Now do the exact same thing in the Flow row in the list, in the **IMPORT
+    SETUP** column, click **Update**. Then, in the popup panel, select **Create
+    as new** and click **Save**.
+
+    **Note:** Make sure both the App and Flow items in the package have the
+    IMPORT STEP column value Create as new.
 
     ![](media/f66d2928ca90b740b70251f6c2d51a54.png)
 
-    Now the **Import** bottom should be enabled.  
-    
+    Now the **Import** bottom should be enabled.
+
 6.  Click **Import**.
 
     ![](media/17fbd97599315f4efc07292df5e489e8.png)
 
-    Wait until the import is done.  On the success page, you will see a link to **Open app** but **DO NOT CLICK TO OPEN** and instead continue to follow the next steps below to open the app.
+    Wait until the import is done. On the success page, click **Open app** to
+    open the Power App in Edit Mode.
 
     ![](media/3c86617ded7cff3351bccac8133bfdb8.png)
 
-> **NOTE:** At the time this Power Apps solution was created, Power Apps componment framework was in beta but it's now been released. However, due to a regression bug the imported Power App must be opened with the previous release of Power Apps Studio.  
-  
-### Open Power Apps Studio Previous Release
-  
-7. Navigate to <a href="https://create.powerapps.com/v3.20064.23.155867258/studio/" target="_blank">https://create.powerapps.com/v3.20064.23.155867258/studio/</a>
+Configure Connector Permissions
+===============================
 
-8. Open the School Transformation Survey Power App.
-  
-9.  When this prompt appears, click **Open app**.  This prompt is referring to the copy to clipboard component in the Power App that allows users to click a button and copy the data from the Power App to their clipboard.  This button does not provide access to read from the clipboard.  This is a standard prompt that appears anytime a Power App uses a custom Power Apps PCF Control, no matter what the control does.
+Next, you will need to configure the permissions for the connectors the Power
+App uses to communicate with Azure Active Directory, Office 365 User Data, and
+OneDrive for Business.
 
-    ![](media/STSOpenApp01.png)
+More details about the connectors:
 
-    Click **Update**.
+**OneDrive for Business**: Connects to data source of the app in OneDrive folder
+you created and uploaded files to at the beginning of this installation process
+in the [Upload SchoolSurvey folder and files to
+OneDrive](#upload-schoolsurvey-folder-and-files-to-onedrive) section.
 
-    ![](media/STSOpenApp02.png)
+**Azure AD**: Checks the membership of users in the Azure Active Directory
+Security Group you created at the beginning of this installation process in the
+[Create a security group in Azure](#create-a-security-group-in-azure) section.
 
-STEP 06: Configure Connector Permissions
-=============================================
-
-Next, you will need to configure the permissions for the connectors the Power App uses to communicate with Azure Active Directory, Office 365 User Data, and OneDrive for Business.
-
-> More details about the connectors:
-> 
-> **OneDrive for Business**: Connects to data source of the app in OneDrive folder you created and uploaded files to at the beginning of this installation process in the [Upload > SchoolSurvey folder and files to OneDrive](#upload-schoolsurvey-folder-and-files-to-onedrive) section.
-> 
-> **Azure AD**: Checks the membership of users in the Azure Active Directory Security Group you created at the beginning of this installation process in the [Create a security group in Azure ](#create-a-security-group-in-azure) section.
-> 
-> **Office365Users**: Provides basic user profile information about the user.
+**Office365Users**: Provides basic user profile information about the user.
 
 You will see this screen appear.
 
 ![](media/cf76c0d76f9842016a2e76041d882e4d.png)
 
-If this is the first time you have opened the app (it should be) you will see the following screen appear when you try to sign in. 
+If this is the first time you have opened the app (it should be) you will see
+the following screen appear when you try to sign in.
 
-1. Select the **Consent on behalf of your organization checkbox**.
-2. Click **Accept**.
+1.  Select the **Consent on behalf of your organization checkbox**.
 
-![](media/15c129b836170de2f1bafa9c1d822535.png)
+2.  Click **Accept**.
 
-3. Then, back in the screen that shows the 3 connectors, click **Allow**.
+    ![](media/15c129b836170de2f1bafa9c1d822535.png)
 
-STEP 07: Configure the Power App
-===========================
+3.  Then, back in the screen that shows the 3 connectors, click **Allow**.
 
-Wait for a moment and you’ll see the edit interface.
+Configure the App
+=================
 
-1.  Open screen **Tree view** from left menus.
+Wait for a moments and you’ll see the edit interface.
 
-    ![](media/8883a0fc61d10f02f56a8a2766e81fa8.png)
+1.  **Open Data sources panel**. There are multiple types of connections that
+    the app uses, nine of them need to be **reconnected**, to the tables in the
+    **Excel files** located in your OneDrive see below:
 
->   Set values for global variables.
+    ![](media/ba2a131d7c9fb8d3b95d9bd228e20755.png)
 
-2. Select **“App”**, In formula bar, select **“OnStart”**, then stretch the fx input area like below.
+2.  **Remove** the nine data sources showed in previous step by **clicking
+    ellipses** behind those nine, choose "Remove" in pop menu.
 
-There are five variables that need to be set, input the proper value in double quotes.
+3.  Connect to OneDrive from Data sources panel under **"Connectors"** group,
+    find **OneDrive for Business** from the group.
 
-![](media/5f9457b48f7f4c9e178b412f9600a69c.png)
-
-**Variable \#1 - districtName:** Input the district name of school.
-
-**Variable \#2 - reportLink:** Go to OneDrive online, copy the link of Power BI template
-file, then paste the link as the value of reportLink.
-
-![](media/fcc1d826ff97e4c5804d4638d8a564c6.png)
-
-**Variable \#3 - reportHelpLink:** Copy and paste the link of [How to use Power
-BI](https://github.com/dighobas/STS/blob/master/Document/How%20to%20use%20PowerBI.md).
-
-**Variable \#4 - appId:** Go to Apps list of PowerApps in your tenant, find the app you are editing and **click
-Details**.
-
-![](media/0db57b466c4a7bfc263572c54a06118a.png)
-
-The appId is shown as follows. Copy and paste it into the appId variable in the app.
-
-![](media/af4bb1901532f440c87f5c866bf4407d.png)
-
-**Variable \#5 - Name of admin group**: If you created the admin group using the name
-“SchoolSurveyAdmin”, you can skip this step, if not, update this section with the admin group name you created.
-
-3.  Go back to the app, **Open Data sources panel**. There are multiple types of
-    connections that the app uses, seven of them need to be **re-connected**,
-    to the tables in the **Excel files** located in your OneDrive see below:
-
-    ![](media/ebdc542fc2b8b0f7272c79dcce80e5bd.png)
-
-4.  **Remove** the seven data sources showed in previous step by **clicking ellipses**
-    behind those seven, choose “Remove” in pop menu.
-
-5.  Connect to OneDrive from Data sources panel under **“Connectors”** group, find
-    **OneDrive for Business** from the group.
-
-    **Click this connector**. The connection probably already exists,
-    you just need to make sure the account in it is you logged in. If it is not you or there is no connection, click
-    **“Add a connection”** and follow steps to add a new one.
+    **Click this connector**. The connection probably already exists, you just
+    need to make sure the account in it is you logged in. If it is not you or
+    there is no connection, click **"Add a connection"** and follow steps to add
+    a new one.
 
     ![](media/d7fa8320465579972d866e267a250189.png)
 
-    **Click the connection** in the fly out window then a new window will pop in from the right. All
-    files of OneDrive are listed in it. **Find the root folder** you created for the
-    app. (SchoolSurvey)
+    **Click the connection** in the fly out window then a new window will pop in
+    from the right. All files of OneDrive are listed in it. **Find the root folder**
+    you created for the app. (SchoolSurvey)
 
     ![](media/2d7de7cccda1b30b2677d92529cbcf0e.png)
 
-    Go to the folder, and select **“AppData”** in its folder list.
+    Go to the folder, and select **"AppData"** in its folder list.
 
     ![](media/58f778bfd3918e6cab35262b6b660c64.png)
 
@@ -311,51 +235,133 @@ The appId is shown as follows. Copy and paste it into the appId variable in the 
 
     ![](media/ebbcdb468d989f3d91442b8c50fe3ff3.png)
 
-    You’ll need to add tables from those four Excels above to the app. For
-    example, **select Schools.xlsx**.
+    You’ll need to add tables from those four Excels above to the app. For example,
+    **select Schools.xlsx**.
 
-    ![](media/78111d138a01ee6a4bbf065528567851.png)
+    ![](media/80999462c70b7804b0a452e4b8701a12.png)
 
-    **Choose table** “Schools”, “Validates”, then **Connect**. You have now added two of seven data connections.
+    **Choose table** "AppConfig"**,** "Schools", "Validates", then **Connect**. You
+    have now added three of nine data connections.
 
     Follow the **same steps as above** and add other tables from corresponding Excel
     files. The list of relationship of tables and Excel files are listed below.
 
-| Excel File         | Tables                                   |
-|--------------------|------------------------------------------|
-| Schools.xlsx       | Schools, Validates                       |
-| SurveyContent.xlsx | Questions, QuestionItems, QuestionGroups |
-| SurveyResults.xlsx | SurveyResults                            |
-| Surveys.xlsx       | Surveys                                  |
+    | Excel File         | Tables                                   |
+    |--------------------|------------------------------------------|
+    | Schools.xlsx       | Schools, Validates, AppConfig            |
+    | SurveyContent.xlsx | Questions, QuestionItems, QuestionGroups |
+    | SurveyResults.xlsx | SurveyResults, GlobalSharedTime          |
+    | Surveys.xlsx       | Surveys                                  |
 
-STEP 08: Save and publish the App
-==================================
-## Power Apps Studio: Save App
-1.  Click **“File”** on the top menus in Edit interface of the app, then click **Save**
-    on the left menu, optionally you can input version note for save and then **click Save**.
+4.  Open screen **Tree view** from left menus, select screen AppConfiguration.
+
+    ![](media/6fef13af0aea04603737587825b66e18.png)
+
+    On the right corner of PowerApps Editor, click Preview icon.
+
+    ![](media/7026a23e61f1a8978c5aeb2df88d6488.png)
+
+    Set values for fields in screen AppConfiguration.
+
+    \#1: **Admin Group Name**: Input admin group name you created when execute the
+    script automate.ps1.
+
+    \#2: **App Id:** Go to Apps list of PowerApps in your tenant, find the app you
+    are editing and **click Details**.
+
+    ![](media/0db57b466c4a7bfc263572c54a06118a.png)
+
+    The App Id is shown as follows. Copy and paste it into the App Id field.
+
+    ![](media/af4bb1901532f440c87f5c866bf4407d.png)
+
+    \#3: **District Name:** Input the district name of school.
+
+    \#4: **Report Link:** Go to OneDrive online, copy the link of Power BI template
+    file, then paste the link in the field.
+
+    ![](media/fcc1d826ff97e4c5804d4638d8a564c6.png)
+
+    \#5: **Report Help Link:** Copy and paste the link of [How to use Power
+    BI](https://canviz.visualstudio.com/_git/School%20Transformation%20Survey?path=%2FDocument3%2FHow%20to%20use%20PowerBI.md).
+
+    Click **Save**, then exit preview mode.
+
+Save and publish the App
+========================
+
+1.  Click **"File"** on the top menus in Edit interface of the app, then click
+    **Save** on the left menu, optionally you can input version note for save
+    and then **click Save**.
 
     ![](media/66da57fd4a7be2f93efb3b778ce14495.png)
-## Power Apps Studio: Publish App
 
-2.  Click **Publish**
+    Click **Publish**
 
     ![](media/f2b242c79dda582ed9066b55c78fcc91.png)
 
-3.  Click **“Publish this version”** in the pop window.
+    Click **"Publish this version"** in the pop window.
 
     ![](media/bb517b17748712cd9b5fa1b045e361af.png)
 
     The app is now ready to be used.
 
-STEP 09: Import the scheduled Flow 
-====================================
+Create the custom connector
+===========================
 
-There are **two flows** in the app, one is an **Instant flow**, the other is a **Scheduled
-flow
-**. The instant flow is packed into app’s package, the scheduled one is not which means that 
-you need to use the **zip package** to **import** it into your environment.
+1.  Open <https://make.powerapps.com> , on the left menu list, collapse Data,
+    Click Custom Connectors.
 
-## Power Automate: Import Flow
+    ![](media/92d21c4e3bc356ce5b5f268c9387ad98.png)
+
+2.  In the right, collapse New custom connector, then choose Import an OpenAPI
+    file.
+
+    ![](media/8f74def55cf043eedf5327b6e13cb43d.png)
+
+3.  In the pop window, input Connector name "UploadJSONToAzure" [DO NOT USE
+    OTHER NAMES], click Import to choose "UploadJSONToAzure.swagger.json" from where you put it in your computer. Then click Continue.
+
+    ![](media/63e8c07bd3fd2e1bbe813c070ef2188b.png)
+
+4.  In the new screen, click Create connector.
+
+    ![](media/0bc25efb5dceb8cddbc23b4f85481ac6.png)
+
+    Wait for a few minutes until you see the screen again, it’s done.
+
+Create a connection to the custom connector
+===========================================
+
+1.  Still in <https://make.powerapps.com> , in the left menu list, go
+    Data-\>Connections
+
+    ![](media/85fa9f9b4ff5d2bd9f07d863a987d490.png)
+
+2.  In connections page, click New connection.
+
+    ![](media/430da6a72f001bac29d3aab23d5d4208.png)
+
+3.  In next page, input "UploadJSONToAzure" to search the connector you created
+    in previous steps on top right corner. You’ll see it in list below. Then
+    click the add icon in the right.
+
+    ![](media/bdb0d7f8feb4f3c4bcfb2691b6599989.png)
+
+4.  In the pop window, click Create.
+
+    ![](media/bdb443fff3b6237ff84bccea2ad20484.png)
+
+    Wait for a few seconds, you’ll be redirected to connections page and a new
+    connection is added. Done.
+
+Import the scheduled Flow
+=========================
+
+There are **two flow** in the app, one is an **Instant type**, the other is a
+**Scheduled type**. The instant flow is packed into app’s package, the scheduled
+one is not which means that you need to use the **zip package** to **import** it
+into your environment.
 
 1.  Open <https://flow.microsoft.com/> in a browser, sign in with you work
     account.
@@ -364,43 +370,45 @@ you need to use the **zip package** to **import** it into your environment.
 
     ![](media/9e80b169f38e00d32602e3ee40c177a9.png)
 
-3.  **Select the flow file** ”WriteSurveyToJSON.zip” from [project
+3.  **Select the flow file** "WriteSurveyToJSON.zip" from [project
     file](#prerequisites) , Upload.
 
     ![](media/ee22f3b98d7bfb6a0dc0170c26814335.png)
 
 4.  Make sure it looks like below:
 
-    ![](media/7fabcd53bde3ec9f2f8ba487e91e0d5a.png)
-
-## Power Automate: Update Flow Connections
+    ![](media/4d0a0b2f7ad4efcf94700a4d320087a8.png)
 
 5.  **Update connections** for Related resources in this flow.
 
-    Click **“Select during import”** on each item, if there are already created connections that exist
-    on the right pop up then select a connection with the same type as showed in Related
-    resources list. **Click Save.**
+6.  Click **"Select during import"** on each item, if there are already created
+    connections that exist on the right pop up then select a connection with the
+    same type as showed in Related resources list. **Click Save.**
 
-    ![](media/cd4fde6baadd61b1d4a6b44af029785d.png)
+    ![](media/0b014085523bcde2398c72e1ac3ab84e.png)
 
-    If no connections, Click **“Create new”** in a new tab of the browser, then follow the steps
-    to create a new one. Once comlpeted go to the previous tab and **Click Refresh list**, you’ll see
-    the new connection you created.
+    After all related resources connected, it should look like below:
+
+    ![](media/05ead00dfe89371c2495e7f930b12abf.png)
+
+    If no connections, Click **"Create new"** in a new tab of the browser, then
+    follow the steps to create a new one. Once completed go to the previous tab and
+    **Click Refresh list**, you’ll see the new connection you created.
 
     ![](media/aa13470cb86a6c6766707b971dbc13d6.png)
 
-6.  You should now see the folling. **Click Import**.
+7.  You should now see the following. **Click Import**.
 
     ![](media/082598131da3594554cb22130eb4126f.png)
 
-7.  **Open flow**
+8.  **Open flow**
 
     ![](media/e8b55978d8ff50a36b5724084eae3c55.png)
 
-STEP 10: Configure the scheduled Flow
-========================================
-## Power Automate: Edit imported Flow
-On Flow interface:
+Configure the scheduled Flow
+============================
+
+On Flow interface
 
 1.  **Set time zone** in Recurrence.
 
@@ -408,23 +416,21 @@ On Flow interface:
 
 2.  **Initialize variable** for reports folder
 
-    Value: input the path of “Reports” folder in OneDrive, for example,
-    “/SchoolSurvey/Reports/”
+    Value: input the path of "Reports" folder in OneDrive, for example,
+    "/SchoolSurvey/Reports/"
 
 3.  **Get Surveys** (Remove invalid information first)
 
     ![](media/711de70ed8b4d237756697b1d9164b36.png)
 
-    )
-
     **Document Library**: OneDrive
 
     **File:** Select the path where you put Surveys.xlsx
 
-    **Table:** Select “Surveys”
+    **Table:** Select "Surveys"
 
-    > NOTE: if you cannot select a table in the dropdown list, re-select the path
-    > of Surveys.xlsx by clicking the file icon in File.
+    **NOTE**: if you cannot select a table in the dropdown list, re-select the path
+    of Surveys.xlsx by clicking the file icon in File.
 
 4.  Get Report Configuration
 
@@ -432,7 +438,7 @@ On Flow interface:
 
     **File**: Select the path where you put SurveyResults.xlsx
 
-    **Table**: Select “ReportConfiguration”
+    **Table**: Select "ReportConfiguration"
 
 5.  Get Calculation Configuration
 
@@ -440,7 +446,7 @@ On Flow interface:
 
     **File**: Select the path where you put SurveyResults.xlsx
 
-    **Table**: Select “CalculationConfiguration”
+    **Table**: Select "CalculationConfiguration"
 
 6.  Apply to each survey-\> Get a School Data
 
@@ -448,7 +454,7 @@ On Flow interface:
 
     **File**: Select the path where you put Schools.xlsx
 
-    **Table**: Select “Schools”
+    **Table**: Select "Schools"
 
 7.  Get the Data of current Survey
 
@@ -456,43 +462,75 @@ On Flow interface:
 
     **File**: Select the path where you put SurveyResults.xlsx
 
-    **Table**: Select “SurveyResults”
+    **Table**: Select "SurveyResults"
 
-8.  **Save and Test the flow**. Make sure the flow runs successfully. 
+8.  Check if AllGlobalData empty-\>If yes -\>Update a row
 
+    **Document Library**: OneDrive
+
+    **File**: Select the path where you put SurveyResults.xlsx
+
+    **Table**: Select "GlobalSharedTime"
+
+    **Key Column**: Id
+
+    **Key Value**: 1
+
+9.  Check if AllGlobalData empty-\>If no -\> Get file content
+
+    **File**: Select the path where you put SampleReport.json, it should like:
+    /SchoolSurvey/Reports/TemplateReport/SampleReport.json
+
+    **NOTE**: Although you would see the path correctly put in box, you’ll have to
+    re-point it again by clicking the file icon in right side of the box.
+
+    ![](media/2967fbb7e58fa2483a29f37e2d15642d.png)
+
+10. Check if AllGlobalData empty-\>If no -\>Update a row2
+    
+    **Document Library**: OneDrive
+
+    **File**: Select the path where you put SurveyResults.xlsx
+
+    **Table**: Select "GlobalSharedTime"
+
+    **Key Column**: Id
+
+    **Key Value**: 1
+
+11. **Save and Test the flow**. Make sure the flow runs successfully.
+    
     ![](media/cd872768ee2b4348ff1dbd6976d14a86.png)
 
-STEP 11: Share the app and its data source
-===========================================
+Share the app and its data source
+=================================
 
 You need to share the app and its data source to someone who want to access the
 app.
-## Power App Portal: Share the School Transformation Survey Power App
 
-1.  Go back to the Power App portal and navigate to **Apps**. 
-
-2. To share the app:
+1.  Share the app
 
     Open the pop menus of your app, **click Share** to open Share panel.
 
     ![](media/8cfdd5c619402e635df7985c893b8bde.png)
 
-    In the Share panel, search and choose a member of your tenant, then **click Share**.
+    In the Share panel, search and choose a member of your tenant, then **click
+    Share**.
 
     Do not set non IT staff as co-owners.
 
     ![](media/b3ce0c26ab7823d1e8fb18e34727a028.png)
 
-3.  Share data source of the app
+2.  Share data source of the app
 
-    Go to **OneDrive folder** of the app, hover on **AppData**, make share icon showed
-    then click it.
+    Go to **OneDrive folder** of the app, hover on **AppData**, make share icon
+    showed then click it.
 
     ![](media/5debd28e3bf762de7b96f8cfebdffe08.png)
 
-    **Click right arrow** in Send Link window, next choose **“People in [your tenant]
-    with the link”** or **“Specific people”**, then click Apply. Lastly search and
-    choose a member of your tenant and **click Send**.
+    **Click right arrow** in Send Link window, next choose **"People in [your
+    tenant] with the link"** or **"Specific people"**, then click Apply. Lastly
+    search and choose a member of your tenant and **click Send**.
 
     ![](media/8a4694ee0ae6028c83183e5c91de2a43.png)
 
@@ -502,72 +540,69 @@ app.
 
     ![](media/e00cd0ed58b21e2767be3eced760b745.png)
 
-STEP 12 (Optional): How to bulk add schools using the Excel sheet
+How to build add schools using the Excel sheet
 ==============================================
-You can bulk add schools if needed by updating the Excel file.
 
-## OneDrive: Update Excel file
 1.  Open the folder **AppData** in OneDrive which holds **Schools.xlsx**.
 
-![](media/ed0b9cb0365b307faed130e31081fb28.png)
+    ![](media/ed0b9cb0365b307faed130e31081fb28.png)
 
 2.  Open Schools.xlsx, start to add/edit/delete records in the file.
 
-![](media/48ecc9219b5d32c7d9b26b4450927c63.png)
+    ![](media/48ecc9219b5d32c7d9b26b4450927c63.png)
 
->   **NOTE:**
-> 
->   Required fields: **SchoolId, SchoolName, SchoolSize, SchoolType, GradeLevel,
->   AcademicPrograms, TeacherRespondents, LeaderRespondents**. Please make these
->   fields filled and have valid values, otherwise you’ll not be able to see
->   them in the school list in the app.
-> 
->   **SchoolId** is a primary key field, please make sure there is no duplicate
->   values.
-> 
->   Empty fields: **Country, State, City, \_PowerAppsId\_**.
-> 
->   Although you can edit/delete school data, but you’d better not do it from
->   Excel, because in some cases school can not be edited or deleted.
+    **Note:**
+
+    Required fields: **SchoolId, SchoolName, SchoolSize, SchoolType, GradeLevel,
+    AcademicPrograms, TeacherRespondents, LeaderRespondents**. Please make these
+    fields filled and have valid values, otherwise you’ll not be able to see
+    them in the school list in the app.
+
+    **SchoolId** is a primary key field, please make sure there is no duplicate
+    values.
+
+    Empty fields: **Country, State, City, \_PowerAppsId\_**.
+
+    Although you can edit/delete school data, but you’d better not do it from
+    Excel, because in some cases school can not be edited or deleted.
 
 3.  Save and check the data.
 
->   Excel online can automatically save the data you modified. Make sure the tag
->   change from Saving to Saved.
+    Excel online can automatically save the data you modified. Make sure the tag
+    change from Saving to Saved.
 
-![](media/0ef68b7e0044925c32d163f6b99bb82c.png)
+    ![](media/0ef68b7e0044925c32d163f6b99bb82c.png)
 
->   Close the excel file, open the app by admin account and navigate to Schools.
->   You’ll see the data you added.
+    Close the excel file, open the app by admin account and navigate to Schools.
+    You’ll see the data you added.
 
-![](media/7706a497a9356a3fa3935628bd29bbd1.png)
+    ![](media/7706a497a9356a3fa3935628bd29bbd1.png)
 
-STEP 13 (Optional): How to embed the Power BI report into Teams
+How to embed the PowerBI report into Teams
 ==========================================
-You can easily embed Power BI reports into Microsoft Teams. If you would like to add the STS Power BI report to a Team follow the steps below:
-## Microsoft Teams: Add Power BI tab
+
 1.  Open your Microsoft Teams app, click Teams or Chat from left tab bar.
 
-![](media/ba358b9418078f1a040398b404e60d62.png)
+    ![](media/ba358b9418078f1a040398b404e60d62.png)
 
 2.  In a team screen or a chat screen, click add icon.
 
-![](media/1ad32b94db4bc7965244fa7208d315e4.png)
+    ![](media/1ad32b94db4bc7965244fa7208d315e4.png)
 
 3.  In the prompt window, search then choose Power BI,
 
-![](media/b251c38f9974106fef89fe6207c7040e.png)
+    ![](media/b251c38f9974106fef89fe6207c7040e.png)
 
 4.  In the Power BI prompt window, input a name for the tab you are adding,
     collapse the workspace which holds the report you are adding, then choose
     the report, click save.
 
-![](media/0742bf82e04b066346d794427faae4ea.png)
+    ![](media/0742bf82e04b066346d794427faae4ea.png)
 
 5.  After clicking Save, you are gonna see a new tab added, and the report
     showed below the tab.
 
->   Note: Make sure members in the team or the chat have permissions to access
->   the report.
+    Note: Make sure members in the team or the chat have permissions to access
+    the report.
 
-![](media/82b89f40fbf37ecb70b6cbfb27473aa1.png)
+    ![](media/82b89f40fbf37ecb70b6cbfb27473aa1.png)
