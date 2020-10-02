@@ -1,3 +1,8 @@
+Installation Click through Demo
+=============
+After you have all the solution files downloaded, you can use this guided demo to help with the steps: 
+[Installation Demo](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdemobuilderwebcpptxz.blob.core.windows.net%2Fschool-transformation-survey-deployment-guide%2Fstartdemo.html%3Fot%3Dfalse%26lan%3D%26guidemodeenabled%3Dfalse%26audioenabled%3Dfalse&data=02%7C01%7Cv-cwheel%40microsoft.com%7C53aba7e7cd8b4c1f032808d866602f43%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637371910584893550&sdata=JwA3FcYJwYBDPZO5pWDfDgENw7JDAODT0kQbVPxXXqQ%3D&reserved=0)
+
 Prerequisites
 =============
 
@@ -30,9 +35,7 @@ Prerequisites
     | Script   | [automate.ps1](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/automate.ps1)                                     | Power Shell script which is executed to complete uploading files in OneDriveContainer to OneDrive and creating security group for the app. |
     | Script   | [UploadJSONToAzure.swagger.json](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/UploadJSONToAzure.swagger.json) | A json file which will be used for creating a custom connector for uploading Global shared data to your Azure website.                     |
 
-## Installation Click through Demo
-After you have all the solution files downloaded, you can use this guided demo to help with the steps: 
-[Installation Demo](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdemobuilderwebcpptxz.blob.core.windows.net%2Fschool-transformation-survey-deployment-guide%2Fstartdemo.html%3Fot%3Dfalse%26lan%3D%26guidemodeenabled%3Dfalse%26audioenabled%3Dfalse&data=02%7C01%7Cv-cwheel%40microsoft.com%7C53aba7e7cd8b4c1f032808d866602f43%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637371910584893550&sdata=JwA3FcYJwYBDPZO5pWDfDgENw7JDAODT0kQbVPxXXqQ%3D&reserved=0)
+
 
 Execute powershell script
 =========================
