@@ -37,7 +37,7 @@ Prerequisites
 
 
 
-Execute powershell script
+Execute PowerShell script
 =========================
 
 Follow the steps below to upload the necessary files to OneDrive and create a
