@@ -178,13 +178,10 @@ OneDrive for Business.
 More details about the connectors:
 
 **OneDrive for Business**: Connects to data source of the app in OneDrive folder
-you created and uploaded files to at the beginning of this installation process
-in the [Upload SchoolSurvey folder and files to
-OneDrive](#upload-schoolsurvey-folder-and-files-to-onedrive) section.
+that was deployed when you ran the PowerShell script.
 
 **Azure AD**: Checks the membership of users in the Azure Active Directory
-Security Group you created at the beginning of this installation process in the
-[Create a security group in Azure](#create-a-security-group-in-azure) section.
+Security Group that was created when you ran the PowerShell script.
 
 **Office365Users**: Provides basic user profile information about the user.
 
