@@ -286,7 +286,7 @@ Wait for a moments and you’ll see the edit interface.
     ![](media/fcc1d826ff97e4c5804d4638d8a564c6.png)
 
     \#5: **Report Help Link:** Copy and paste the link of [How to use Power
-    BI](https://canviz.visualstudio.com/_git/School%20Transformation%20Survey?path=%2FDocument3%2FHow%20to%20use%20PowerBI.md).
+    BI](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/How%20to%20use%20PowerBI.md).
 
     Click **Save**, then exit preview mode.
 
