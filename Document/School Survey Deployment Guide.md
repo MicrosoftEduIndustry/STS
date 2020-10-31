@@ -564,43 +564,40 @@ How to build add schools using the Excel sheet
 2.  Open Schools.xlsx, start to add/edit/delete records in the file.
 
     ![](media/48ecc9219b5d32c7d9b26b4450927c63.png)
-
-    > **NOTE:**
-    > 
-    >> #### Required fields:
-    >> These fields must be filled with valid values otherwise you’ll not be able to see them in the school list in the app.
-    > - **SchoolId**
-    >    - <em>**SchoolId** is a primary key field, please make sure there is no duplicate values.</em>
-    > - **SchoolName**
-    > - **SchoolSize**
-    > - **SchoolType**
-    > - **GradeLevel**
-    > - **AcademicPrograms**
-    > - **TeacherRespondents**
-    > - **LeaderRespondents**
-    > 
-    >
-    >> #### Empty fields:
-    >> The empty fields are not required but the fields need to remain in the Excel file otherwise the app will break.
-    > - **Country**
-    > - **State**
-    > - **City**
-    > - **\_PowerAppsId\_**
-    > 
     
-    >> <em>The **Country**, **State** and **City** fields were added for United States schools and the **\_PowerAppsId\_** field is a column the Power App uses and will automatically generate a value for.</em>
-
-3.  Save and check the data.
+***
+> ### NOTE:
+> **Required fields:** These fields must be filled with valid values otherwise you’ll not be able to see them in the school list in the app.
+> - **SchoolId**
+>     - <em>**SchoolId** is a primary key field, please make sure there is no duplicate values.</em>
+> - **SchoolName**
+> - **SchoolSize**
+> - **SchoolType**
+> - **GradeLevel**
+> - **AcademicPrograms**
+> - **TeacherRespondents**
+> - **LeaderRespondents**
+> 
+> 
+> **Empty fields:** The empty fields are not required but the fields need to remain in the Excel file otherwise the app will break.
+> - **Country**
+> - **State**
+> - **City**
+> - **\_PowerAppsId\_**
+> 
+> <em>The **Country**, **State** and **City** fields were added for United States schools and the **\_PowerAppsId\_** field is a column the Power App uses and will automatically generate a value for.</em>
+***
+3.  **Save** and check the data.
 
     Excel online can automatically save the data you modified. Make sure the tag
-    change from Saving to Saved.
+    changed from Saving to Saved.
 
     ![](media/0ef68b7e0044925c32d163f6b99bb82c.png)
 
-    Close the excel file, open the app by admin account and navigate to Schools.
-    You’ll see the data you added.
+4. Close the excel file, open the app by admin account and navigate to Schools. You’ll see the data you added.
 
     ![](media/7706a497a9356a3fa3935628bd29bbd1.png)
+    
 
 How to embed the PowerBI report into Teams
 ==========================================
