@@ -519,7 +519,7 @@ In order for the app to work, the app and the data source for the app's data nee
 2. In the Share panel, search and choose a member of your tenant that will be filling out the survey. Continue to add additional members and then click
     **Share**.
 
-    > **PLEASE NOTE:** Ensure you do not set non IT staff as co-owners.
+    > **NOTE:** Ensure you do not set non IT staff as co-owners.
 
     ![](media/b3ce0c26ab7823d1e8fb18e34727a028.png)
 
