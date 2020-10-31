@@ -508,7 +508,7 @@ On Flow interface
 Share the app and it's data source
 =================================
 
-In order for the app to work, the app and the data source for the app's data needs to be shared. Sharing will grant the users the necessary permissions for accessing the survey app and for the app to write the data to the Excel file. Proceed with the next steps to share the app and share the AppData folder.
+In order for the app to work, the app and the data source for the app's data needs to be shared. Sharing will grant users the necessary permissions for accessing the survey app and for the app to write the data to the Excel file. Proceed with the next steps to share the app and share the AppData folder.
 
 ## Share the app
 
