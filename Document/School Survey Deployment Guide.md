@@ -525,27 +525,31 @@ In order for the app to work, the app and the data source for the app's data nee
 
 ## Share data source of the app
 
-1. Open **OneDrive**, find and open the **SchoolSurvey** folder. 
+1. In the browser, click on the Office 365 app launcher to open the Office 365 apps panel and click on **OneDrive**.
+
+    ![](media/ShareApp00.png)
+    
+2. From OneDrive, open the **SchoolSurvey** folder. 
 
     ![](media/ShareApp01.png)
     
-2. Hover over to the right of the **AppData** folder and click on the **Share** icon.
+3. Hover over to the right of the **AppData** folder and click on the **Share** icon.
 
     ![](media/ShareApp02.png)
     
-3. Click on the **right arrow** in **Send Link** window next to **Anyone with the link can edit**.
+4. Click on the **right arrow** in **Send Link** window next to **Anyone with the link can edit**.
 
     ![](media/ShareApp03.png)
 
-4.	Next choose **People in [your tenant] with the link**. Ensure **Allow editing** is checked and then click **Apply**. 
+5.	Next choose **People in [your tenant] with the link**. Ensure **Allow editing** is checked and then click **Apply**. 
 
     ![](media/ShareApp04.png)
     
-5. Search and choose members of your tenant you want to give the access to for filling out the survey.
+6. Search and choose members of your tenant you want to give the access to for filling out the survey.
 
     ![](media/ShareApp05.png)
     
-6. Continue to add additional members and add an optional message (such as explaining the access is for the Survey participation) then click **Send**.
+7. Continue to add additional members and add an optional message (such as explaining the access is for the Survey participation) then click **Send**.
 
     ![](media/ShareApp06.png)
     
