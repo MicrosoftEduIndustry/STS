@@ -580,13 +580,14 @@ How to build add schools using the Excel sheet
     > - **LeaderRespondents**
     > 
     >
-    > #### Empty fields
+    > #### Empty fields:
     >> The empty fields are not required but the fields need to remain in the Excel file otherwise the app will break.
     > - **Country**
     > - **State**
     > - **City**
     > - **\_PowerAppsId\_**
     > 
+    
     >> <em>The **Country**, **State** and **City** fields were added for United States schools and the **\_PowerAppsId\_** field is a column the Power App uses and will automatically generate a value for.</em>
 
 3.  Save and check the data.
