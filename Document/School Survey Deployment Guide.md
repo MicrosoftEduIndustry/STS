@@ -567,7 +567,7 @@ How to build add schools using the Excel sheet
 
     > **NOTE:**
     > 
-    > #### Required fields:
+    >> #### Required fields:
     >> These fields must be filled with valid values otherwise you’ll not be able to see them in the school list in the app.
     > - **SchoolId**
     >    - <em>**SchoolId** is a primary key field, please make sure there is no duplicate values.</em>
@@ -580,7 +580,7 @@ How to build add schools using the Excel sheet
     > - **LeaderRespondents**
     > 
     >
-    > #### Empty fields:
+    >> #### Empty fields:
     >> The empty fields are not required but the fields need to remain in the Excel file otherwise the app will break.
     > - **Country**
     > - **State**
