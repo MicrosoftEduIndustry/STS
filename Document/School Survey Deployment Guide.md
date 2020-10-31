@@ -505,43 +505,50 @@ On Flow interface
     
     ![](media/cd872768ee2b4348ff1dbd6976d14a86.png)
 
-Share the app and its data source
+Share the app and it's data source
 =================================
 
-You need to share the app and its data source to someone who want to access the
-app.
+In order for the app to work, the app and the data source for the app's data needs to be shared. Sharing will grant the users the necessary permissions for accessing the survey app and for the app to write the data to the Excel file. Proceed with the next steps to share the app and share the AppData folder.
 
-1.  Share the app
+## Share the app
 
-    Open the pop menus of your app, **click Share** to open Share panel.
+1.  In a web browser, open <https://make.powerapps.com> and go to **Apps**. Find **School Transformation Survey** > click on the **<em>ellipses</em> (...)** and then click **Share**. This will open the Share panel.
 
     ![](media/8cfdd5c619402e635df7985c893b8bde.png)
 
-    In the Share panel, search and choose a member of your tenant, then **click
-    Share**.
+2. In the Share panel, search and choose a member of your tenant that will be filling out the survey. Continue to add additional members and then click
+    **Share**.
 
-    Do not set non IT staff as co-owners.
+    > **PLEASE NOTE:** Ensure you do not set non IT staff as co-owners.
 
     ![](media/b3ce0c26ab7823d1e8fb18e34727a028.png)
 
-2.  Share data source of the app
+## Share data source of the app
 
-    Go to **OneDrive folder** of the app, hover on **AppData**, make share icon
-    showed then click it.
+1. Open **OneDrive**, find and open the **SchoolSurvey** folder. 
 
-    ![](media/5debd28e3bf762de7b96f8cfebdffe08.png)
+    ![](media/ShareApp01.png)
+    
+2. Hover over to the right of the **AppData** folder and click on the **Share** icon.
 
-    **Click right arrow** in Send Link window, next choose **"People in [your
-    tenant] with the link"** or **"Specific people"**, then click Apply. Lastly
-    search and choose a member of your tenant and **click Send**.
+    ![](media/ShareApp02.png)
+    
+3. Click on the **right arrow** in **Send Link** window next to **Anyone with the link can edit**.
 
-    ![](media/8a4694ee0ae6028c83183e5c91de2a43.png)
+    ![](media/ShareApp03.png)
 
-    ![](media/f37625443bf59066f34a298c5b8e4086.png)
+4.	Next choose **People in [your tenant] with the link**. Ensure **Allow editing** is checked and then click **Apply**. 
 
-    ![](media/f4f4457f7c108bb922ae5432a2d6508f.png)
+    ![](media/ShareApp04.png)
+    
+5. Search and choose members of your tenant you want to give the access to for filling out the survey.
 
-    ![](media/e00cd0ed58b21e2767be3eced760b745.png)
+    ![](media/ShareApp05.png)
+    
+6. Continue to add additional members and add an optional message (such as explaining the access is for the Survey participation) then click **Send**.
+
+    ![](media/ShareApp06.png)
+    
 
 How to build add schools using the Excel sheet
 ==============================================
