@@ -4,4 +4,8 @@
 
 ![](media/downloadglobaljson-01.png)
 
+3. Hover over **globalSharedSurvey.json**. Click on the vertical ellipses (...) and choose **Download**.
+
 ![](media/downloadglobaljson-02.png)
+
+4. Save the file to your local computer.
