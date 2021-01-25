@@ -2,9 +2,9 @@
 
 # Prerequisites
 
-1.  Previous installed School Transformation Survey
+1. Previously installed School Transformation Survey.
 
-2.  Download the following items:
+2. Download the following items:
 
     | **Type** | **Name**                                                                                                                                                   | **Description**                                                                                                                         |
     | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -16,13 +16,13 @@ This section will walk you through the required steps to deploy the updated solu
 
 First, import the Power App by following steps.
 
-1.  In a web browser, open <https://make.powerapps.com> and go to **Apps**.
+1. In a web browser, open <https://make.powerapps.com> and go to **Apps**.
 
-2.  Click **Import canvas app**.
+2. Click **Import canvas app**.
 
     ![](media/eeec895c3206dd79de9b7e1226ae1b52.png)
 
-3.  Browse to the **SchoolTransformationSurvery.zip** file in the project files
+3. Browse to the **SchoolTransformationSurvery.zip** file in the project files
     you downloaded and select it, then click **Upload**.
 
     ![](media/a994e41c61938c96b05a44fe3f55caa2.png)
@@ -33,17 +33,11 @@ First, import the Power App by following steps.
 
     ![](media/4cb8fb2a3c42121141bdd8135b8ce562.png)
 
-    Since this package is new to your environment, the **IMPORT SETUP** value
-    needs to be changed from **Update** to **Create as new** for **BOTH** the
+    > Since the solution is already existing in your environment, ensure the **IMPORT SETUP** value is set to **Update** for **BOTH** the
     Power App and Flow.
 
-4.  In the App row in the list, in the **IMPORT SETUP** column, click
-    **Update**. Then, in the popup panel, select **Create as new** and click
-    **Save**. (See the screenshot below for more details.)
-
-5.  Now do the exact same thing in the Flow row in the list, in the **IMPORT
-    SETUP** column, click **Update**. Then, in the popup panel, select **Create
-    as new** and click **Save**.
+4. Now do the exact same thing in the Flow row in the list. In the **IMPORT
+    SETUP** column, click **Update**.
 
     **Note:** Make sure both the App and Flow items in the package have the
     IMPORT STEP column value Create as new.
@@ -52,7 +46,7 @@ First, import the Power App by following steps.
 
     Now the **Import** bottom should be enabled.
 
-6.  Click **Import**.
+5. Click **Import**.
 
     ![](media/17fbd97599315f4efc07292df5e489e8.png)
 
