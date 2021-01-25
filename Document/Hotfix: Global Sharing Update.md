@@ -1,8 +1,8 @@
+**NOTE:** These steps are ONLY for those who already have the School Transformation Survey deployed. If you haven't deployed STS at all, please go to [School Transformation Deployment Guide](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
+
 # Prerequisites
 
 1.  Previous installed School Transformation Survey
-
-**NOTE:** These steps are ONLY for those who already have the School Transformation Survey deployed. If you haven't deployed STS at all, please go to [School Transformation Deployment Guide](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
 
 2.  Download the following items:
 
