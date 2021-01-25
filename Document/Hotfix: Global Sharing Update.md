@@ -2,6 +2,8 @@
 
 1.  Previous installed School Transformation Survey
 
+**NOTE:** These steps are ONLY for those who already have the School Transformation Survey deployed. If you haven't deployed STS at all, please go to [School Transformation Deployment Guide](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
+
 2.  Download the following items:
 
     | **Type** | **Name**                                                                                                                                                   | **Description**                                                                                                                         |
@@ -11,8 +13,6 @@
 
 # Import the Power App
 This section will walk you through the required steps to deploy the updated solution files.
-
-> **NOTE:** These steps are ONLY for those who already have the School Transformation Survey deployed. If you haven't deployed STS at all, please go to [School Transformation Deployment Guide](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
 
 First, import the Power App by following steps.
 
