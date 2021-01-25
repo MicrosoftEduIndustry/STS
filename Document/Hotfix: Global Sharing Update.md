@@ -10,8 +10,11 @@
     | Zip      | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/blob/master/Packages/Hotfixes/WriteSurveyToJSON.zip)                   | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.        |
 
 # Import the Power App
+This section will walk you through the required steps to deploy the updated solution files.
 
-First, Import the Power App by following steps.
+> **NOTE:** These steps are ONLY for those who already have the School Transformation Survey deployed. If you haven't deployed STS at all, please go to [School Transformation Deployment Guide](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md)
+
+First, import the Power App by following steps.
 
 1.  In a web browser, open <https://make.powerapps.com> and go to **Apps**.
 
