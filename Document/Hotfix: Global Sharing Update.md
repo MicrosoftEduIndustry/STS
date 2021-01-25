@@ -6,8 +6,8 @@
 
     | **Type** | **Name**                                                                                                                                                   | **Description**                                                                                                                         |
     | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-    | Zip      | [SchoolTransformationSurvey.zip](https://canviz.visualstudio.com/_git/School%20Transformation%20Survey?path=%2FPackages4%2FSchoolTransformationSurvey.zip) | Download and leave zipped: Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate. |
-    | Zip      | [WriteSurveyToJSON.zip](https://canviz.visualstudio.com/_git/School%20Transformation%20Survey?path=%2FPackages4%2FWriteSurveyToJSON.zip)                   | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.        |
+    | Zip      | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/blob/master/Packages/Hotfixes/SchoolTransformationSurvey.zip) | Download and leave zipped: Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate. |
+    | Zip      | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/blob/master/Packages/Hotfixes/WriteSurveyToJSON.zip)                   | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.        |
 
 # Import the Power App
 
@@ -177,7 +177,7 @@ Wait for a moments and you’ll see the edit interface.
     ![](media/fcc1d826ff97e4c5804d4638d8a564c6.png)
 
     \#5: **Report Help Link:** Copy and paste the link of [How to use Power
-    BI](https://canviz.visualstudio.com/_git/School%20Transformation%20Survey?path=%2FDocument3%2FHow%20to%20use%20PowerBI.md).
+    BI](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/How%20to%20use%20PowerBI.md).
 
     Click **Save**, then exit preview mode.
 
