@@ -31,9 +31,9 @@ Prerequisites
     |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
     | Zip      | [OneDriveContainer.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/OneDriveContainer.zip)                   | Download and extract zipped files: The SchoolSurvey folder and all it's contents will need to be uploaded to OneDrive.                     |
     | Zip      | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Download and leave zipped: Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate.    |
-    | Zip      | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)                   | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate.           |
-    | Script   | [automate.ps1](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/automate.ps1)                                     | Power Shell script which is executed to complete uploading files in OneDriveContainer to OneDrive and creating security group for the app. |
-    | Script   | [UploadJSONToAzure.swagger.json](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/UploadJSONToAzure.swagger.json) | A json file which will be used for creating a custom connector for uploading Global shared data to your Azure website.                     |
+    | Zip      | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)                   | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate. (**Right-click** > **Save As**)           |
+    | Script   | [automate.ps1](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/automate.ps1)                                     | Power Shell script which is executed to complete uploading files in OneDriveContainer to OneDrive and creating security group for the app. (**Right-click** > **Save As**)   |
+    | Script   | [UploadJSONToAzure.swagger.json](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/UploadJSONToAzure.swagger.json) | A json file which will be used for creating a custom connector for uploading Global shared data to your Azure website. (**Right-click** > **Save As**)                       |
 
 
 
@@ -55,11 +55,12 @@ security group for the app.
 2.  Run the installer you downloaded. Once you have installed the downloaded
     setup, you can proceed next steps.
 
-3.  Open "automate.ps1" using Notepad or VS Code(recommend).
+3.  Open **automate.ps1** using Notepad or VS Code (recommended).
 
 4.  Replace values of variables in the beginning of the script file which are in
-    between "Initialize variables start" and "Initialize variables end". Here is
-    an example for these values.
+    between "Initialize variables start" and "Initialize variables end". 
+    
+    **NOTE:** Here is an example for these values:
 
     | Variable         | Value                                                              |
     |------------------|--------------------------------------------------------------------|
@@ -70,50 +71,52 @@ security group for the app.
     | \$GroupName      | SchoolSurveyAdmin                                                  |
     | \$MembersInGroup | <abc@dodo.onmicrosoft.com>, <edf@dodo.onmicrosoft.com>             |
 
-5.  Save the script file. Find and right click windows powershell in your
-    computer, choosing Run as administrator.
+5.  Save the script file. Find and right click **Windows Powershell** on your
+    computer and choose **Run as Administrator**.
 
-6.  Redirect to the folder which you put automate.ps1 using cd command.
+6.  Navigate to the folder which you dpwnloaded the **automate.ps1** using the **`cd`** command similar to the screenshot below:
 
     ![](media/9c15c69f2793d9e72941329e9fc00795.png)
 
-    Then execute the script file by inputting .\\automate.ps1
+    Then execute the script file by typing **`.\\automate.ps1`** and hit enter.
 
     ![](media/a5d558b3743b6b76d4840311d709c1e2.png)
 
-    During the script executing, you may encounter information like below:
+    During the script executing, you should see something similar to below:
 
     ![](media/350145c03cd90f1967de9441c3c3ef98.png)
 
     ![](media/bd5012bd1b0c8499238c1539948cbede.png)
 
-    For both, enter Y or y to proceed.
+    For both messages, enter **`Y`** or **`y`** to proceed.
 
-    **NOTE:**
+    > **NOTE:** You may encounter this error below when executing the script.
 
-    You may encounter this error as below when executing the script.
+    > ![](media/edf0453373a5ae261814eb5370b7a8d5.png)
 
-    ![](media/edf0453373a5ae261814eb5370b7a8d5.png)
-
-    This is a security measure in PowerShell to prevent malicious scripts from
+    > This is a security measure in PowerShell to prevent malicious scripts from
     running and potentially harming the system. Of course the script you are running
     will not harm your system. To fix it, please execute the script below to change
     the execution policy in PowerShell.
 
-    **Set-ExecutionPolicy RemoteSigned -Scope LocalMachine**
+    > **Set-ExecutionPolicy RemoteSigned -Scope LocalMachine**
 
-    ![](media/38aad1889bfc6c2b811a94b6ea62fe20.png)
+    > ![](media/38aad1889bfc6c2b811a94b6ea62fe20.png)
 
-7.  To check scripts work fine, Login to OneDrive check if the files have
-    uploaded under root directory and the files structure is same with in
-    OneDriveContainer(NOT including itself).
+7.  To check scripts ran successfully. Login to **OneDrive** from the browser. 
 
-8.  Login to Azure, go to Azure Active Directory -\>Groups check if the group
-    has been created and its members added.
+    > Check if the files have
+    uploaded under root directory and the file structure is same as what was in the files you downloaded in the
+    OneDriveContainer folder.
+
+8.  Login to Azure by going to <https://portal.azure.com>.
+
+9. Navigate to **Azure Active Directory** > **Groups** and check if the group
+    has been created and members added.
 
     ![](media/dac08392a937f46d4af67f523eeae2ea.png)
 
-    And if you want to add more members to the group, go into the group detail
+    If you want to add more members to the group, navigate to the group detail
     page.
 
     ![](media/89a65c540d3a47ad991b68e0ed2e8a78.png)
