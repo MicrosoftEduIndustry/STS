@@ -109,7 +109,7 @@ security group for the app.
     uploaded under root directory and the file structure is same as what was in the files you downloaded in the
     OneDriveContainer folder.
 
-8.  Login to Azure by going to <https://portal.azure.com>.
+8.  Login to **Azure** by going to <https://portal.azure.com> in the browser.
 
 9. Navigate to **Azure Active Directory** > **Groups** and check if the group
     has been created and members added.
@@ -141,30 +141,14 @@ Next, install the Power App in the target environment.
     the one show below. Make sure there are two items in the package, one is the
     Power App, the other is the Flow which the Power App uses.
 
-    ![](media/4cb8fb2a3c42121141bdd8135b8ce562.png)
-
-    Since this package is new to your environment, the **IMPORT SETUP** value
-    needs to be changed from **Update** to **Create as new** for **BOTH** the
+    > Since this package is new to your environment, ensure the **IMPORT SETUP** values are set to **Create as new** for **BOTH** the
     Power App and Flow.
 
-4.  In the App row in the list, in the **IMPORT SETUP** column, click
-    **Update**. Then, in the popup panel, select **Create as new** and click
-    **Save**. (See the screenshot below for more details.)
+    ![](media/STSImportPackageNew.png)
 
-5.  Now do the exact same thing in the Flow row in the list, in the **IMPORT
-    SETUP** column, click **Update**. Then, in the popup panel, select **Create
-    as new** and click **Save**.
+4.  Click **Import**.
 
-    **Note:** Make sure both the App and Flow items in the package have the
-    IMPORT STEP column value Create as new.
-
-    ![](media/f66d2928ca90b740b70251f6c2d51a54.png)
-
-    Now the **Import** bottom should be enabled.
-
-6.  Click **Import**.
-
-    ![](media/17fbd97599315f4efc07292df5e489e8.png)
+    ![](media/STSImportPackageNewImport.png)
 
     Wait until the import is done. On the success page, click **Open app** to
     open the Power App in Edit Mode.
