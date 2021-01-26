@@ -55,12 +55,11 @@ There are two different ways you can do this:
 
 ---
 
-Option 1 - PowerShell method: Execute PowerShell script
+<img src="media/right-arrow.png" alt="option 1" width="15"/> Option 1 - PowerShell method: Execute PowerShell script
 ---------------
 
 Follow the steps below to upload the necessary files to OneDrive and create a
 security group for the app using the PowerShell method.
-
 
 
 1.  Download [SharePoint Online Client
@@ -140,7 +139,7 @@ security group for the app using the PowerShell method.
 
 ---
 
-Option 2 - Manual method: Upload files & create Azure AD group
+<img src="media/right-arrow.png" alt="option 2" width="15"/> Option 2 - Manual method: Upload files & create Azure AD group
 ---------------
 Please follow the steps below to upload the files manually to OneDrive for Business and to create an Azure AD security group.
  
