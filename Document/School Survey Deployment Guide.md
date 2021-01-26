@@ -48,7 +48,7 @@ security group for the app.
 
 1.  Download [SharePoint Online Client
     Components](https://www.microsoft.com/en-us/download/details.aspx?id=42038).
-    In the download prompt page, choose a one you want then download the file.
+    In the download prompt page, choose the one similar to the screenshot below and click **Next** to download the file.
 
     ![](media/f7921f3a29eae339b9fa732ec6121603.png)
 
