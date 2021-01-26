@@ -37,7 +37,7 @@ Prerequisites
 
 
 
-Execute PowerShell script
+Step 01: Execute PowerShell script
 =========================
 
 Follow the steps below to upload the necessary files to OneDrive and create a
@@ -121,7 +121,7 @@ security group for the app.
 
     ![](media/89a65c540d3a47ad991b68e0ed2e8a78.png)
 
-Import the Power App
+Step 02: Import the Power App
 ====================
 
 Next, install the Power App in the target environment.
@@ -171,7 +171,7 @@ Next, install the Power App in the target environment.
 
     ![](media/3c86617ded7cff3351bccac8133bfdb8.png)
 
-Configure Connector Permissions
+Step 03: Configure Connector Permissions
 ===============================
 
 Next, you will need to configure the permissions for the connectors the Power
@@ -203,7 +203,7 @@ the following screen appear when you try to sign in.
 
 3.  Then, back in the screen that shows the 3 connectors, click **Allow**.
 
-Configure the App
+Step 04: Configure the App
 =================
 
 Wait for a moments and you’ll see the edit interface.
@@ -293,7 +293,7 @@ Wait for a moments and you’ll see the edit interface.
 
     Click **Save**, then exit preview mode.
 
-Save and publish the App
+Step 05: Save and publish the App
 ========================
 
 1.  Click **"File"** on the top menus in Edit interface of the app, then click
@@ -312,7 +312,7 @@ Save and publish the App
 
     The app is now ready to be used.
 
-Create the custom connector
+Step 06: Create the custom connector
 ===========================
 
 1.  Open <https://make.powerapps.com> , on the left menu list, collapse Data,
@@ -336,7 +336,7 @@ Create the custom connector
 
     Wait for a few minutes until you see the screen again, it’s done.
 
-Create a connection to the custom connector
+Step 07: Create a connection to the custom connector
 ===========================================
 
 1.  Still in <https://make.powerapps.com> , in the left menu list, go
@@ -361,7 +361,7 @@ Create a connection to the custom connector
     Wait for a few seconds, you’ll be redirected to connections page and a new
     connection is added. Done.
 
-Import the scheduled Flow
+Step 08: Import the scheduled Flow
 =========================
 
 There are **two flow** in the app, one is an **Instant type**, the other is a
@@ -411,7 +411,7 @@ into your environment.
 
     ![](media/e8b55978d8ff50a36b5724084eae3c55.png)
 
-Configure the scheduled Flow
+Step 09: Configure the scheduled Flow
 ============================
 
 On Flow interface
@@ -508,7 +508,7 @@ On Flow interface
     
     ![](media/cd872768ee2b4348ff1dbd6976d14a86.png)
 
-Share the app and it's data source
+Step 10: Share the app and it's data source
 =================================
 
 In order for the app to work, the app and the data source for the app's data needs to be shared. Sharing will grant users the necessary permissions for accessing the survey app and for the app to write the data to the Excel file. Proceed with the next steps to share the app and the AppData folder.
@@ -602,7 +602,7 @@ How to build add schools using the Excel sheet
     ![](media/7706a497a9356a3fa3935628bd29bbd1.png)
     
 
-How to embed the PowerBI report into Teams
+Optional Step: How to embed the PowerBI report into Teams
 ==========================================
 
 1.  Open your Microsoft Teams app, click Teams or Chat from left tab bar.
