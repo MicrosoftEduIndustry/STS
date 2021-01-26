@@ -203,12 +203,12 @@ Please follow the steps below to upload the files manually to OneDrive for Busin
 9.  Go to the group list, search and find the group, select the group, and
     finally, click **Members**.
 
-![](media/2ec57c530ae6cc20c8f6b3bd8c31689b.png)
+    ![](media/2ec57c530ae6cc20c8f6b3bd8c31689b.png)
 
 10.  Click **+ Add members**, then search for and select a member in your
     organization to add.
 
-![](media/b4b8910faf133a23033be87963a239bf.png)
+    ![](media/b4b8910faf133a23033be87963a239bf.png)
 
 11.  Click **Select** to add them to the group.
 
