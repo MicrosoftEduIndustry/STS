@@ -169,6 +169,49 @@ Please follow the steps below to upload the files manually to OneDrive for Busin
 
     **NOTE:** If the file structure doesn’t look like this or if you are having issues uploading the entire folder with subfolders, please create the folders and upload/move files to match this structure. 
 
+### Create Azure AD Security Group
+1.  Login to the **Azure** portal. <https://portal.azure.com>
+
+2.  Select **Azure Active Directory**.
+
+![](media/0d699aebbc7ed2c59c04b8b0b30f1831.png)
+
+3.  Select **Groups**, then click **+ New group**.
+
+![](media/fd22fdc67dd72be58702e6c9ca8077c0.png)
+
+![](media/f0e0777978730206963bdb854e8d0507.png)
+
+4.  Set **Group type** to **Security**.
+
+5.  In the **Group name**. textbox, enter SchoolSurveyAdmin.
+
+-   **Note:** If you change the Group name to be something other than
+    SchoolSurveyAdmin you’ll have to update it in Power App.
+
+6.  Add a description if you like.
+
+7.  You can also add members to this group in this dialog or add them after the
+    group is created.
+
+![](media/488a165dd3ec0734004f6160b9740472.png)
+
+8.  Add members to the group you created. If you didn’t add members when you
+    created the group, or if you need to add new members in the future, follow
+    these steps.
+
+9.  Go to the group list, search and find the group, select the group, and
+    finally, click **Members**.
+
+![](media/2ec57c530ae6cc20c8f6b3bd8c31689b.png)
+
+10.  Click **+ Add members**, then search for and select a member in your
+    organization to add.
+
+![](media/b4b8910faf133a23033be87963a239bf.png)
+
+11.  Click **Select** to add them to the group.
+
 ---
 
 <img src="media/Footsteps.png" alt="Step 02" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 02: Import the Power App
@@ -232,13 +275,13 @@ You should see a dialog appear with an **Azure AD**, **Office 365 Users**, and *
 If this is the first time you have opened the app (it should be) you will now see
 the following screen appear when you try to sign in.
 
-1.  Select the **Consent on behalf of your organization checkbox**.
+2.  Select the **Consent on behalf of your organization checkbox**.
 
-2.  Click **Accept**.
+3.  Click **Accept**.
 
     ![](media/15c129b836170de2f1bafa9c1d822535.png)
 
-3.  Now go back to the screen that shows the 3 connectors and click **Allow**.
+4.  Now go back to the screen that shows the 3 connectors and click **Allow**.
 
 <img src="media/Footsteps.png" alt="Step 04" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 04: Configure the App
 =================
@@ -258,20 +301,20 @@ To update the data connections, follow the steps below:
 
     ![](media/ba2a131d7c9fb8d3b95d9bd228e20755.png)
 
-2.  **Remove** the nine OneDrive connected data sources showed in previous step by **clicking
+2.  **Remove** the nine **OneDrive** connected data sources showed in previous step by **clicking
     ellipses** for each one of the data connection and choose **Remove** in pop-up menu.
 
-3.  Connect to **OneDrive** from Data sources panel under **"Connectors"** group,
-    find **OneDrive for Business** from the group.
+    After you remove the **OneDrive for Business** connections, you will see error icons on your Power App. This is to be expected.
 
-    **Click this connector**. The connection probably already exists, you just
-    need to make sure the account in it is you logged in. If it is not you or
-    there is no connection, click **"Add a connection"** and follow steps to add
-    a new one.
+    Scroll down to the bottom of the connectors and you should see **OneDrive for Business**.
+
+    ![](media/STSImportPackageDataAdd.png)
+
+3.  **Click** on **OneDrive for Business** to start creating a new connection.
 
     ![](media/d7fa8320465579972d866e267a250189.png)
 
-    **Click the connection** in the fly out window then a new window will pop in
+ 4. **Click the connection** in the fly out window then a new window will pop in
     from the right. All files of OneDrive are listed in it. **Find the root folder**
     you created for the app. (SchoolSurvey)
 
@@ -303,7 +346,7 @@ To update the data connections, follow the steps below:
     | SurveyResults.xlsx | SurveyResults, GlobalSharedTime          |
     | Surveys.xlsx       | Surveys                                  |
 
-4.  Open screen **Tree view** from left menus, select screen AppConfiguration.
+5.  Open screen **Tree view** from left menus, select screen AppConfiguration.
 
     ![](media/6fef13af0aea04603737587825b66e18.png)
 
