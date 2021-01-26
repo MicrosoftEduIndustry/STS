@@ -3,6 +3,7 @@ Installation Click through Demo
 After you have all the solution files downloaded, you can use this guided demo to help with the steps: 
 [Installation Demo](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdemobuilderwebcpptxz.blob.core.windows.net%2Fschool-transformation-survey-deployment-guide%2Fstartdemo.html%3Fot%3Dfalse%26lan%3D%26guidemodeenabled%3Dfalse%26audioenabled%3Dfalse&data=02%7C01%7Cv-cwheel%40microsoft.com%7C53aba7e7cd8b4c1f032808d866602f43%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637371910584893550&sdata=JwA3FcYJwYBDPZO5pWDfDgENw7JDAODT0kQbVPxXXqQ%3D&reserved=0)
 
+
 Prerequisites
 =============
 
@@ -10,7 +11,7 @@ Prerequisites
 
 1.  A Microsoft 365 account with the following services:
 
-    -   SharePoint Client Component (steps included to install)
+    -   SharePoint Client Components (steps included to install)
 
     -   Windows PowerShell (steps included to install)
 
@@ -35,17 +36,32 @@ Prerequisites
     | Script   | [automate.ps1](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/automate.ps1)                                     | Power Shell script which is executed to complete uploading files in OneDriveContainer to OneDrive and creating security group for the app. <br><br>**Right-click** > **Save link as** on filename to download.   |
     | Script   | [UploadJSONToAzure.swagger.json](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/UploadJSONToAzure.swagger.json) | A json file which will be used for creating a custom connector for uploading Global shared data to your Azure website. <br><br>**Right-click** > **Save link as** on filename to download.                       |
 
+---
 
+![Step 01](media/Footsteps.png) Step 01: OneDrive Files & Azure AD Group Creation
+====================
 
-Step 01: Execute PowerShell script
-=========================
+OneDrive Files & Azure AD Group Installation Options
+---------------
 
-Follow the steps below to upload the necessary files to OneDrive and create a
-security group for the app.
+Before you can get started with installing the Power App and Flow you will need to upload files to OneDrive for Business and setup an Azure AD security group. 
 
-  **NOTE:** Ensure you unzipped the OneDriveContainer.zip folder you downloaded in the prerequisites solution files steps.
+There are two different ways you can do this:
+
+1. Option 1 - PowerShell method
+2. Option 2 - Manual method
+
+**NOTE:** No matter which method you choose to use please ensure you unzipped the **OneDriveContainer.zip** folder you downloaded in the prerequisites solution files steps.
 
 ---
+
+Option 1 - PowerShell method: Execute PowerShell script
+---------------
+
+Follow the steps below to upload the necessary files to OneDrive and create a
+security group for the app using the PowerShell method.
+
+
 
 1.  Download [SharePoint Online Client
     Components](https://www.microsoft.com/en-us/download/details.aspx?id=42038).
@@ -122,7 +138,16 @@ security group for the app.
 
     ![](media/89a65c540d3a47ad991b68e0ed2e8a78.png)
 
-Step 02: Import the Power App
+---
+
+Option 2 - Manual method: Upload files & create Azure AD group
+---------------
+Please follow the steps below to upload the files manually to OneDrive for Business and to create an Azure AD security group.
+ 
+
+
+
+![Step 02](media/Footsteps.png) Step 02: Import the Power App
 ====================
 
 Next, install the Power App in the target environment.
@@ -157,7 +182,7 @@ Next, install the Power App in the target environment.
 
     ![](media/3c86617ded7cff3351bccac8133bfdb8.png)
 
-Step 03: Configure Connector Permissions
+![Step 03](media/Footsteps.png) Step 03: Configure Connector Permissions
 ===============================
 
 Next you will need to configure the permissions for the connectors the Power
@@ -191,7 +216,7 @@ the following screen appear when you try to sign in.
 
 3.  Now go back to the screen that shows the 3 connectors and click **Allow**.
 
-Step 04: Configure the App
+![Step 04](media/Footsteps.png) Step 04: Configure the App
 =================
 
 Wait for a moment. Power Apps Studio will then open and the app will default to the edit interface.
@@ -288,7 +313,7 @@ To update the data connections, follow the steps below:
 
     Click **Save**, then exit preview mode.
 
-Step 05: Save and publish the App
+![Step 05](media/Footsteps.png) Step 05: Save and publish the App
 ========================
 
 1.  Click **"File"** on the top menus in Edit interface of the app, then click
@@ -307,7 +332,7 @@ Step 05: Save and publish the App
 
     The app is now ready to be used.
 
-Step 06: Create the custom connector
+![Step 06](media/Footsteps.png) Step 06: Create the custom connector
 ===========================
 
 1.  Open <https://make.powerapps.com> , on the left menu list, collapse Data,
@@ -331,7 +356,7 @@ Step 06: Create the custom connector
 
     Wait for a few minutes until you see the screen again, it’s done.
 
-Step 07: Create a connection to the custom connector
+![Step 07](media/Footsteps.png) Step 07: Create a connection to the custom connector
 ===========================================
 
 1.  Still in <https://make.powerapps.com> , in the left menu list, go
@@ -356,7 +381,7 @@ Step 07: Create a connection to the custom connector
     Wait for a few seconds, you’ll be redirected to connections page and a new
     connection is added. Done.
 
-Step 08: Import the scheduled Flow
+![Step 08](media/Footsteps.png) Step 08: Import the scheduled Flow
 =========================
 
 There are **two flow** in the app, one is an **Instant type**, the other is a
@@ -406,7 +431,7 @@ into your environment.
 
     ![](media/e8b55978d8ff50a36b5724084eae3c55.png)
 
-Step 09: Configure the scheduled Flow
+![Step 09](media/Footsteps.png) Step 09: Configure the scheduled Flow
 ============================
 
 On Flow interface
@@ -503,7 +528,7 @@ On Flow interface
     
     ![](media/cd872768ee2b4348ff1dbd6976d14a86.png)
 
-Step 10: Share the app and it's data source
+![Step 10](media/Footsteps.png) Step 10: Share the app and it's data source
 =================================
 
 In order for the app to work, the app and the data source for the app's data needs to be shared. Sharing will grant users the necessary permissions for accessing the survey app and for the app to write the data to the Excel file. Proceed with the next steps to share the app and the AppData folder.
@@ -597,7 +622,7 @@ How to build add schools using the Excel sheet
     ![](media/7706a497a9356a3fa3935628bd29bbd1.png)
     
 
-Optional Step: How to embed the PowerBI report into Teams
+![Optional Step](media/Footsteps.png) Optional Step: How to embed the PowerBI report into Teams
 ==========================================
 
 1.  Open your Microsoft Teams app, click Teams or Chat from left tab bar.
