@@ -145,7 +145,7 @@ Please follow the steps below to upload the files manually to OneDrive for Busin
 
 ### Upload files to OneDrive for Business
  
-1.  Login to **Office.com** <https://www.office.com> and navigate to **OneDrive**. 
+1. Login to **Office.com** <https://www.office.com> and navigate to **OneDrive**. 
 
 1. Select **My files** ensuring you are seeing **Files**.
 
@@ -174,27 +174,27 @@ Please follow the steps below to upload the files manually to OneDrive for Busin
 
 2.  Select **Azure Active Directory**.
 
-![](media/0d699aebbc7ed2c59c04b8b0b30f1831.png)
+    ![](media/0d699aebbc7ed2c59c04b8b0b30f1831.png)
 
 3.  Select **Groups**, then click **+ New group**.
 
-![](media/fd22fdc67dd72be58702e6c9ca8077c0.png)
+    ![](media/fd22fdc67dd72be58702e6c9ca8077c0.png)
 
-![](media/f0e0777978730206963bdb854e8d0507.png)
+    ![](media/f0e0777978730206963bdb854e8d0507.png)
 
 4.  Set **Group type** to **Security**.
 
-5.  In the **Group name**. textbox, enter SchoolSurveyAdmin.
+5.  In the **Group name** textbox, enter **SchoolSurveyAdmin**.
 
--   **Note:** If you change the Group name to be something other than
-    SchoolSurveyAdmin you’ll have to update it in Power App.
+    > **NOTE:** If you change the Group name to be something other than
+    SchoolSurveyAdmin you’ll have to update it in Power App. Therefore we advise you set it as SchoolSurveyAdmin.
 
-6.  Add a description if you like.
+6.  Add an optional **description** if preferred.
 
-7.  You can also add members to this group in this dialog or add them after the
-    group is created.
+7.  You can add members to this group in this dialog or add them after the
+    group is created. To add members to this group, click on **No members selected**.
 
-![](media/488a165dd3ec0734004f6160b9740472.png)
+    ![](media/488a165dd3ec0734004f6160b9740472.png)
 
 8.  Add members to the group you created. If you didn’t add members when you
     created the group, or if you need to add new members in the future, follow
@@ -299,7 +299,7 @@ To update the data connections, follow the steps below:
     the app uses, nine of them need to be **reconnected**, to the tables in the
     **Excel files** located in your OneDrive see below:
 
-    ![](media/ba2a131d7c9fb8d3b95d9bd228e20755.png)
+        ![](media/ba2a131d7c9fb8d3b95d9bd228e20755.png)
 
 2.  **Remove** the nine **OneDrive** connected data sources showed in previous step by **clicking
     ellipses** for each one of the data connection and choose **Remove** in pop-up menu.
