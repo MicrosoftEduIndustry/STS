@@ -158,25 +158,25 @@ Next, install the Power App in the target environment.
 Step 03: Configure Connector Permissions
 ===============================
 
-Next, you will need to configure the permissions for the connectors the Power
+Next you will need to configure the permissions for the connectors the Power
 App uses to communicate with Azure Active Directory, Office 365 User Data, and
 OneDrive for Business.
 
-More details about the connectors:
-
-**OneDrive for Business**: Connects to data source of the app in OneDrive folder
+> **More details about the connectors:**
+> 
+>> **OneDrive for Business**: Connects to data source of the app in OneDrive folder
 that was deployed when you ran the PowerShell script.
-
-**Azure AD**: Checks the membership of users in the Azure Active Directory
+>> 
+>> **Azure AD**: Checks the membership of users in the Azure Active Directory
 Security Group that was created when you ran the PowerShell script.
+>> 
+>> **Office365Users**: Provides basic user profile information about the user.
 
-**Office365Users**: Provides basic user profile information about the user.
-
-You will see this screen appear.
+You should see the following screen appear:
 
 ![](media/cf76c0d76f9842016a2e76041d882e4d.png)
 
-If this is the first time you have opened the app (it should be) you will see
+If this is the first time you have opened the app (it should be) you will now see
 the following screen appear when you try to sign in.
 
 1.  Select the **Consent on behalf of your organization checkbox**.
@@ -185,23 +185,30 @@ the following screen appear when you try to sign in.
 
     ![](media/15c129b836170de2f1bafa9c1d822535.png)
 
-3.  Then, back in the screen that shows the 3 connectors, click **Allow**.
+3.  Now go back to the screen that shows the 3 connectors and click **Allow**.
 
 Step 04: Configure the App
 =================
 
-Wait for a moments and you’ll see the edit interface.
+Wait for a moment. Power Apps Studio will then open and the app will default to the edit interface.
 
-1.  **Open Data sources panel**. There are multiple types of connections that
+In the next steps, you will be updating the connections used for the app.
+> The reason this has to be done is because Power Apps does not have the ability to automatically adjust the location of the files stored in your OneDrive.
+
+To update the data connections, follow the steps below:
+
+1.  **Open Data sources panel** located in the left navigation bar.
+
+    > There are multiple types of connections that
     the app uses, nine of them need to be **reconnected**, to the tables in the
     **Excel files** located in your OneDrive see below:
 
     ![](media/ba2a131d7c9fb8d3b95d9bd228e20755.png)
 
-2.  **Remove** the nine data sources showed in previous step by **clicking
-    ellipses** behind those nine, choose "Remove" in pop menu.
+2.  **Remove** the nine OneDrive connected data sources showed in previous step by **clicking
+    ellipses** for each one of the data connection and choose **Remove** in pop-up menu.
 
-3.  Connect to OneDrive from Data sources panel under **"Connectors"** group,
+3.  Connect to **OneDrive** from Data sources panel under **"Connectors"** group,
     find **OneDrive for Business** from the group.
 
     **Click this connector**. The connection probably already exists, you just
