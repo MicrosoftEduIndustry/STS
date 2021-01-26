@@ -38,7 +38,7 @@ Prerequisites
 
 ---
 
-![Step 01](media/Footsteps.png) Step 01: OneDrive Files & Azure AD Group Creation
+<img src="media/Footsteps.png" alt="Step 01" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 01: OneDrive Files & Azure AD Group Creation
 ====================
 
 OneDrive Files & Azure AD Group Installation Options
@@ -55,7 +55,7 @@ There are two different ways you can do this:
 
 ---
 
-<img src="media/right-arrow.png" alt="option 1" width="15"/> Option 1 - PowerShell method: Execute PowerShell script
+<img src="media/right-arrow.png" alt="option 1" width="25" style="max-width:100%;vertical-align: bottom;"> Option 1 - PowerShell method: Execute PowerShell script
 ---------------
 
 Follow the steps below to upload the necessary files to OneDrive and create a
@@ -139,14 +139,14 @@ security group for the app using the PowerShell method.
 
 ---
 
-<img src="media/right-arrow.png" alt="option 2" width="15"/> Option 2 - Manual method: Upload files & create Azure AD group
+<img src="media/right-arrow.png" alt="option 1" width="25" style="max-width:100%;vertical-align: bottom;"> Option 2 - Manual method: Upload files & create Azure AD group
 ---------------
 Please follow the steps below to upload the files manually to OneDrive for Business and to create an Azure AD security group.
  
 
+---
 
-
-![Step 02](media/Footsteps.png) Step 02: Import the Power App
+<img src="media/Footsteps.png" alt="Step 02" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 02: Import the Power App
 ====================
 
 Next, install the Power App in the target environment.
@@ -181,7 +181,7 @@ Next, install the Power App in the target environment.
 
     ![](media/3c86617ded7cff3351bccac8133bfdb8.png)
 
-![Step 03](media/Footsteps.png) Step 03: Configure Connector Permissions
+<img src="media/Footsteps.png" alt="Step 03" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 03: Configure Connector Permissions
 ===============================
 
 Next you will need to configure the permissions for the connectors the Power
@@ -215,7 +215,7 @@ the following screen appear when you try to sign in.
 
 3.  Now go back to the screen that shows the 3 connectors and click **Allow**.
 
-![Step 04](media/Footsteps.png) Step 04: Configure the App
+<img src="media/Footsteps.png" alt="Step 04" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 04: Configure the App
 =================
 
 Wait for a moment. Power Apps Studio will then open and the app will default to the edit interface.
@@ -312,7 +312,7 @@ To update the data connections, follow the steps below:
 
     Click **Save**, then exit preview mode.
 
-![Step 05](media/Footsteps.png) Step 05: Save and publish the App
+<img src="media/Footsteps.png" alt="Step 05" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 05: Save and publish the App
 ========================
 
 1.  Click **"File"** on the top menus in Edit interface of the app, then click
@@ -331,7 +331,7 @@ To update the data connections, follow the steps below:
 
     The app is now ready to be used.
 
-![Step 06](media/Footsteps.png) Step 06: Create the custom connector
+<img src="media/Footsteps.png" alt="Step 06" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 06: Create the custom connector
 ===========================
 
 1.  Open <https://make.powerapps.com> , on the left menu list, collapse Data,
@@ -355,7 +355,7 @@ To update the data connections, follow the steps below:
 
     Wait for a few minutes until you see the screen again, it’s done.
 
-![Step 07](media/Footsteps.png) Step 07: Create a connection to the custom connector
+<img src="media/Footsteps.png" alt="Step 07" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 07: Create a connection to the custom connector
 ===========================================
 
 1.  Still in <https://make.powerapps.com> , in the left menu list, go
@@ -380,7 +380,7 @@ To update the data connections, follow the steps below:
     Wait for a few seconds, you’ll be redirected to connections page and a new
     connection is added. Done.
 
-![Step 08](media/Footsteps.png) Step 08: Import the scheduled Flow
+<img src="media/Footsteps.png" alt="Step 08" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 08: Import the scheduled Flow
 =========================
 
 There are **two flow** in the app, one is an **Instant type**, the other is a
@@ -430,7 +430,7 @@ into your environment.
 
     ![](media/e8b55978d8ff50a36b5724084eae3c55.png)
 
-![Step 09](media/Footsteps.png) Step 09: Configure the scheduled Flow
+<img src="media/Footsteps.png" alt="Step 09" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 09: Configure the scheduled Flow
 ============================
 
 On Flow interface
@@ -527,7 +527,7 @@ On Flow interface
     
     ![](media/cd872768ee2b4348ff1dbd6976d14a86.png)
 
-![Step 10](media/Footsteps.png) Step 10: Share the app and it's data source
+<img src="media/Footsteps.png" alt="Step 10" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 10: Share the app and it's data source
 =================================
 
 In order for the app to work, the app and the data source for the app's data needs to be shared. Sharing will grant users the necessary permissions for accessing the survey app and for the app to write the data to the Excel file. Proceed with the next steps to share the app and the AppData folder.
@@ -621,7 +621,7 @@ How to build add schools using the Excel sheet
     ![](media/7706a497a9356a3fa3935628bd29bbd1.png)
     
 
-![Optional Step](media/Footsteps.png) Optional Step: How to embed the PowerBI report into Teams
+<img src="media/Footsteps.png" alt="Optional PBI embed step" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Optional Step: How to embed the PowerBI report into Teams
 ==========================================
 
 1.  Open your Microsoft Teams app, click Teams or Chat from left tab bar.
