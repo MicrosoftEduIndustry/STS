@@ -143,6 +143,29 @@ security group for the app using the PowerShell method.
 ---------------
 Please follow the steps below to upload the files manually to OneDrive for Business and to create an Azure AD security group.
  
+1.  Login to **Office.com** <https://www.office.com> and navigate to **OneDrive**. 
+
+1. Select **My files** ensuring you are seeing **Files**.
+
+    ![](media/STS01.png)
+
+2.  Now upload the SchoolSurvey root folder to OneDrive. Click on **Upload** > **Folder**.
+
+    ![](media/STS02.png)
+    
+3.  Browse to the **SchoolSurvey** folder where you downloaded and extracted for this project.  Select the **SchoolSurvey** subfolder, then click **Upload**.
+
+    ![](media/STS03.png)
+
+4. When prompted to confirm uploading of files, click **Upload**.
+
+    ![](media/STS04.png)
+
+5.  When the upload is done, open the **SchoolSurvey** folder and verify the files and folders have been uploaded. The folder structure and files in the folders will look like this:
+
+    ![](media/99a955026f737dbe9af78f7c89394a04.png)
+
+    **NOTE:** If the file structure doesn’t look like this or if you are having issues uploading the entire folder with subfolders, please create the folders and upload/move files to match this structure. 
 
 ---
 
