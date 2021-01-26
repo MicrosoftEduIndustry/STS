@@ -142,6 +142,8 @@ security group for the app using the PowerShell method.
 <img src="media/right-arrow.png" alt="option 1" width="25" style="max-width:100%;vertical-align: bottom;"> Option 2 - Manual method: Upload files & create Azure AD group
 ---------------
 Please follow the steps below to upload the files manually to OneDrive for Business and to create an Azure AD security group.
+
+### Upload files to OneDrive for Business
  
 1.  Login to **Office.com** <https://www.office.com> and navigate to **OneDrive**. 
 
