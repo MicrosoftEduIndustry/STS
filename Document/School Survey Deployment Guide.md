@@ -48,8 +48,8 @@ Before you can get started with installing the Power App and Flow you will need 
 
 There are two different ways you can do this:
 
-1. Option 1 - PowerShell method
-2. Option 2 - Manual method
+1. [Option 1 - PowerShell method](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md#-option-1---powershell-method-execute-powershell-script)
+2. [Option 2 - Manual method](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/School%20Survey%20Deployment%20Guide.md#-option-2---manual-method-upload-files--create-azure-ad-group)
 
 **NOTE:** No matter which method you choose to use please ensure you unzipped the **OneDriveContainer.zip** folder you downloaded in the prerequisites solution files steps.
 
