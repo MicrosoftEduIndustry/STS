@@ -10,18 +10,18 @@ Prerequisites
 
 1.  A Microsoft 365 account with the following services:
 
-    -   SharePoint Client Component(To install in your computer)
+    -   SharePoint Client Component (steps included to install)
 
-    -   Windows PowerShell (Installed by default in Windows)
+    -   Windows PowerShell (steps included to install)
 
-    -   OneDrive for Business
+    -   OneDrive for Business (included in O365 subscription)
 
     -   Power Apps
 
-    -   Power BI (Free for personal workspace or Pro for shared workspaces and
+    -   Power BI (free for personal workspace or Pro for shared workspaces and
         dashboards)
 
-    -   Power BI Desktop installed
+    -   Power BI Desktop (free to install)
 
 2.  An Azure subscription
 ## Solution Files
@@ -29,11 +29,11 @@ Prerequisites
 
     | **Type** | **Name**                                                                                                                                                   | **Description**                                                                                                                            |
     |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-    | Zip      | [OneDriveContainer.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/OneDriveContainer.zip)                   | Download and extract zipped files: The SchoolSurvey folder and all it's contents will need to be uploaded to OneDrive.                     |
-    | Zip      | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Download and leave zipped: Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate.    |
-    | Zip      | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)                   | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate. (**Right-click** > **Save As**)           |
-    | Script   | [automate.ps1](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/automate.ps1)                                     | Power Shell script which is executed to complete uploading files in OneDriveContainer to OneDrive and creating security group for the app. (**Right-click** > **Save As**)   |
-    | Script   | [UploadJSONToAzure.swagger.json](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/UploadJSONToAzure.swagger.json) | A json file which will be used for creating a custom connector for uploading Global shared data to your Azure website. (**Right-click** > **Save As**)                       |
+    | Zip      | [OneDriveContainer.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/OneDriveContainer.zip)                   | Download and extract zipped files: The SchoolSurvey folder and all it's contents will need to be uploaded to OneDrive. <br><br>Click on filename to download.                    |
+    | Zip      | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Download and leave zipped: Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate. <br><br>Click on filename to download.   |
+    | Zip      | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)                   | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate. <br><br>Click on filename to download.           |
+    | Script   | [automate.ps1](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/automate.ps1)                                     | Power Shell script which is executed to complete uploading files in OneDriveContainer to OneDrive and creating security group for the app. <br><br>**Right-click** > **Save As** on filename to download.   |
+    | Script   | [UploadJSONToAzure.swagger.json](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/UploadJSONToAzure.swagger.json) | A json file which will be used for creating a custom connector for uploading Global shared data to your Azure website. <br><br>**Right-click** > **Save As** on filename to download.                       |
 
 
 
@@ -43,8 +43,9 @@ Step 01: Execute PowerShell script
 Follow the steps below to upload the necessary files to OneDrive and create a
 security group for the app.
 
->   **NOTE:** Ensure you unzipped the OneDriveContainer.zip folder you
->   downloaded in the prerequisites solution files steps.
+  **NOTE:** Ensure you unzipped the OneDriveContainer.zip folder you downloaded in the prerequisites solution files steps.
+
+---
 
 1.  Download [SharePoint Online Client
     Components](https://www.microsoft.com/en-us/download/details.aspx?id=42038).
@@ -126,6 +127,7 @@ Step 02: Import the Power App
 
 Next, install the Power App in the target environment.
 
+
 1.  In a web browser, open <https://make.powerapps.com> and go to **Apps**.
 
 2.  Click **Import canvas app**.
@@ -141,7 +143,7 @@ Next, install the Power App in the target environment.
     the one show below. Make sure there are two items in the package, one is the
     Power App, the other is the Flow which the Power App uses.
 
-    > Since this package is new to your environment, ensure the **IMPORT SETUP** values are set to **Create as new** for **BOTH** the
+    **NOTE:** Since this package is new to your environment, ensure the **IMPORT SETUP** values are set to **Create as new** for **BOTH** the
     Power App and Flow.
 
     ![](media/STSImportPackageNew.png)
@@ -150,7 +152,7 @@ Next, install the Power App in the target environment.
 
     ![](media/STSImportPackageNewImport.png)
 
-    Wait until the import is done. On the success page, click **Open app** to
+5. Wait until the import is done. On the success page, click **Open app** to
     open the Power App in Edit Mode.
 
     ![](media/3c86617ded7cff3351bccac8133bfdb8.png)
@@ -162,19 +164,21 @@ Next you will need to configure the permissions for the connectors the Power
 App uses to communicate with Azure Active Directory, Office 365 User Data, and
 OneDrive for Business.
 
-> **More details about the connectors:**
-> 
->> **OneDrive for Business**: Connects to data source of the app in OneDrive folder
+### More details about the connectors:
+
+* **OneDrive for Business**: Connects to data source of the app in OneDrive folder
 that was deployed when you ran the PowerShell script.
->> 
->> **Azure AD**: Checks the membership of users in the Azure Active Directory
+ 
+* **Azure AD**: Checks the membership of users in the Azure Active Directory
 Security Group that was created when you ran the PowerShell script.
->> 
->> **Office365Users**: Provides basic user profile information about the user.
 
-You should see the following screen appear:
+* **Office365Users**: Provides basic user profile information about the user.
+---
+You should see a dialog appear with an **Azure AD**, **Office 365 Users**, and **OneDrive for Business** connections. The **Azure AD** connection should have a **Sign in** button. 
 
-![](media/cf76c0d76f9842016a2e76041d882e4d.png)
+1. Click **Sign in**.
+
+    ![](media/STSImportPackageOpenPrompt.png)
 
 If this is the first time you have opened the app (it should be) you will now see
 the following screen appear when you try to sign in.
