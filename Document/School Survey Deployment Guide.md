@@ -7,34 +7,36 @@ After you have all the solution files downloaded, you can use this guided demo t
 Prerequisites
 =============
 
-## M365 Accounts and Subcriptions
+## M365 Accounts and Subscriptions
 
 1.  A Microsoft 365 account with the following services:
 
-    -   SharePoint Client Components (steps included to install)
-
-    -   Windows PowerShell (steps included to install)
-
-    -   OneDrive for Business (included in O365 subscription)
-
-    -   Power Apps
-
-    -   Power BI (free for personal workspace or Pro for shared workspaces and
-        dashboards)
-
-    -   Power BI Desktop (free to install)
+    - SharePoint Client Components *(only needed if using PowerShell option included in steps)*
+  
+    - Windows PowerShell *(only needed if using PowerShell option included in steps)*
+  
+    - OneDrive for Business *(included in your O365 EDU subscription)*
+  
+    - Power Apps *(included in your O365 EDU subscription)*
+  
+    - Power Automate *(included in your O365 EDU subscription)*
+  
+    - Power BI *(free for personal workspace or Pro for shared workspaces and dashboards)*
+  
+    - Power BI Desktop *(free to install)*
 
 2.  An Azure subscription
+
 ## Solution Files
 3.  Download the following items:
 
     | **Type** | **Name**                                                                                                                                                   | **Description**                                                                                                                            |
     |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-    | Zip      | [OneDriveContainer.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/OneDriveContainer.zip)                   | Download and extract zipped files: The SchoolSurvey folder and all it's contents will need to be uploaded to OneDrive. <br><br>**Click** on filename to download.                    |
-    | Zip      | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Download and leave zipped: Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate. <br><br>**Click** on filename to download.   |
-    | Zip      | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)                   | Download and leave zipped: Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate. <br><br>**Click** on filename to download.           |
-    | Script   | [automate.ps1](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/automate.ps1)                                     | Power Shell script which is executed to complete uploading files in OneDriveContainer to OneDrive and creating security group for the app. <br><br>**Right-click** > **Save link as** on filename to download.   |
-    | Script   | [UploadJSONToAzure.swagger.json](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/UploadJSONToAzure.swagger.json) | A json file which will be used for creating a custom connector for uploading Global shared data to your Azure website. <br><br>**Right-click** > **Save link as** on filename to download.                       |
+    | Zip      | [OneDriveContainer.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/OneDriveContainer.zip)                   | This zipped file contains a SchoolSurvey folder with subfolders and files used for the Power App. The SchoolSurvey folder and all it's contents will need to be uploaded to OneDrive.<br><br>**Instructions:**<br>Download and extract zipped files. **Click** on filename to download.                    |
+    | Zip      | [SchoolTransformationSurvey.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/SchoolTransformationSurvey.zip) | Contains an app package and an Instant Flow which will need to be imported and configured in Power Automate.<br><br>**Instructions:**<br>Download and leave files zipped. **Click** on filename to download.   |
+    | Zip      | [WriteSurveyToJSON.zip](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/WriteSurveyToJSON.zip)                   | Contains a Scheduled Flow for the app that will need to be imported and configured in Power Automate. <br><br>**Instructions:**<br>Download and leave files zipped. **Click** on filename to download.           |
+    | Script   | [automate.ps1](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/automate.ps1)                                     | Power Shell script which is executed to complete uploading files in OneDriveContainer to OneDrive and creating security group for the app.<br><br>**Instructions:**<br>Download file. **Right-click** > **Save link as** on filename to download.   |
+    | Script   | [UploadJSONToAzure.swagger.json](https://github.com/MicrosoftEduIndustry/STS/raw/master/Packages/UploadJSONToAzure.swagger.json) | A json file which will be used for creating a custom connector for uploading Global shared data to your Azure website.<br><br>**Instructions:**<br>Download file. **Right-click** > **Save link as** on filename to download.                       |
 
 ---
 
@@ -44,7 +46,7 @@ Prerequisites
 OneDrive Files & Azure AD Group Installation Options
 ---------------
 
-Before you can get started with installing the Power App and Flow you will need to upload files to OneDrive for Business and setup an Azure AD security group. 
+Before you can install the Power App and Flow solution you will need to upload files to OneDrive for Business and setup an Azure AD security group. 
 
 There are two different ways you can do this:
 
