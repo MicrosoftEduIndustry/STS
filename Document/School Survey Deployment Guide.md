@@ -301,20 +301,20 @@ To update the data connections, follow the steps below:
     the app uses, nine of them need to be **reconnected**, to the tables in the
     **Excel files** located in your OneDrive see below:
 
-        ![](media/ba2a131d7c9fb8d3b95d9bd228e20755.png)
+    ![](media/STSImportPackageRemoveData.png)
 
 2.  **Remove** the nine **OneDrive** connected data sources showed in previous step by **clicking
     ellipses** for each one of the data connection and choose **Remove** in pop-up menu.
 
-    After you remove the **OneDrive for Business** connections, you will see error icons on your Power App. This is to be expected.
+    After you remove the **OneDrive for Business** connections, you will see red error icons on your Power App. This is to be expected.
 
     Scroll down to the bottom of the connectors and you should see **OneDrive for Business**.
 
     ![](media/STSImportPackageDataAdd.png)
 
-3.  **Click** on **OneDrive for Business** to start creating a new connection.
+3.  Click on **OneDrive for Business** to start creating a new connection.
 
-    ![](media/d7fa8320465579972d866e267a250189.png)
+    ![](media/STSImportPackageDataAddOneDrive.png)
 
  4. **Click the connection** in the fly out window then a new window will pop in
     from the right. All files of OneDrive are listed in it. **Find the root folder**
