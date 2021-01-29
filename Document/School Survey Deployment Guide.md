@@ -404,7 +404,8 @@ To update continue with the following steps:
 
 <img src="media/Footsteps.png" alt="Step 05" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 05: Save and publish the App
 ========================
-## Publish the app
+In the next steps, you will save and publish the app.
+
 1. Click **File** on the top menu in Edit interface of the app. Click **Save** from the left menu. Optionally you can input a version note and then click **Save**.
 
     ![](media/66da57fd4a7be2f93efb3b778ce14495.png)
