@@ -290,20 +290,23 @@ the following screen appear when you try to sign in.
 
 Wait for a moment. Power Apps Studio will then open and the app will default to the edit interface.
 
+## Update data connections in Power App
+
 In the next steps, you will be updating the connections used for the app.
-> The reason this has to be done is because Power Apps does not have the ability to automatically adjust the location of the files stored in your OneDrive.
+
+> **NOTE:** The reason this has to be done is because Power Apps does not have the ability to automatically adjust the location of the files stored in your OneDrive.
 
 To update the data connections, follow the steps below:
 
 1.  **Open Data sources panel** located in the left navigation bar.
 
     > There are multiple types of connections that
-    the app uses, nine of them need to be **reconnected**, to the tables in the
+    the app uses, twelve of them need to be **reconnected**, to the tables in the
     **Excel files** located in your OneDrive see below:
 
     ![](media/STSImportPackageRemoveData.png)
 
-2.  **Remove** the nine **OneDrive** connected data sources showed in previous step by **clicking
+2.  **Remove** the twelve **OneDrive** connected data sources showed in previous step by **clicking
     ellipses** for each one of the data connection and choose **Remove** in pop-up menu.
 
     After you remove the **OneDrive for Business** connections, you will see red error icons on your Power App. This is to be expected.
@@ -343,7 +346,7 @@ To update the data connections, follow the steps below:
    - "Validates"
 2. Click on **Connect** button. 
    
-   You have now added 5 of nine data connections.
+   You have now added 5 of twelve data connections.
 
 3. Follow the **same steps as above** and add other tables from corresponding Excel files. The list of relationship of tables and Excel files are listed below:
 
@@ -354,58 +357,67 @@ To update the data connections, follow the steps below:
     | SurveyResults.xlsx | SurveyResults, GlobalSharedTime          |
     | Surveys.xlsx       | Surveys                                  |
 
-4.  Open screen **Tree view** from left menus, select screen AppConfiguration.
+1. Once you have all the tables added you should now see them listed in the Data panel and all red error icons should be gone.
+
+    ![](media/PowerAppDataExcelConnected.png)
+
+## Update AppConfiguration in Power App
+In these next steps, you will need to set some values needed in the Admin: Settings screen. These settings are required as they are values used for the Flow used with this Power App.
+
+To update continue with the following steps:
+
+1.  Open the **Tree view** from left menu and select screen **AppConfiguration**.
 
     ![](media/6fef13af0aea04603737587825b66e18.png)
 
-    On the right corner of PowerApps Editor, click Preview icon.
+2. On the upper-right corner of PowerApps Editor, click **Preview >** icon.
 
     ![](media/7026a23e61f1a8978c5aeb2df88d6488.png)
 
-    Set values for fields in screen AppConfiguration.
+ ### Set values for fields in screen AppConfiguration
 
-    \#1: **Admin Group Name**: Input admin group name you created when execute the
-    script automate.ps1.
+   1. **Admin Group Name**: Input the admin group name **SchoolSurveyAdmin**
+        
+        This was the group that was created when you either ran the automate.ps1 PowerShell script or created manually..
 
-    \#2: **App Id:** Go to Apps list of PowerApps in your tenant, find the app you
+   2. **App Id:** Go to Apps list of PowerApps in your tenant, find the app you
     are editing and **click Details**.
 
-    ![](media/0db57b466c4a7bfc263572c54a06118a.png)
+        ![](media/0db57b466c4a7bfc263572c54a06118a.png)
+        
+        The **App Id** is shown as follows. Copy and paste it into the **App Id** field.
 
-    The App Id is shown as follows. Copy and paste it into the App Id field.
+        ![](media/af4bb1901532f440c87f5c866bf4407d.png)
 
-    ![](media/af4bb1901532f440c87f5c866bf4407d.png)
+   3. **District Name:** Input the district name of school.
 
-    \#3: **District Name:** Input the district name of school.
+   4. **Report Link:** Open a new browser tab and go to <https://www.office.com> From the App Launcher, navigate to **OneDrive for Business**. Navigate to **Files** > **SchoolSurvey** > **Reports** > **TemplateReport** and copy the URL of the **SchoolTranformationSurvey.pbix** Power BI template file.
+   
+       Now got back to the Power App in the other browwer tab and paste the link in the **Report Link** field.
+   
+        ![](media/fcc1d826ff97e4c5804d4638d8a564c6.png)
 
-    \#4: **Report Link:** Go to OneDrive online, copy the link of Power BI template
-    file, then paste the link in the field.
-
-    ![](media/fcc1d826ff97e4c5804d4638d8a564c6.png)
-
-    \#5: **Report Help Link:** Copy and paste the link of [How to use Power
+   5. **Report Help Link:** Copy and paste the link of [How to use Power
     BI](https://github.com/MicrosoftEduIndustry/STS/blob/master/Document/How%20to%20use%20PowerBI.md).
 
-    Click **Save**, then exit preview mode.
+   6. Click **Save**, then exit preview mode.
 
 <img src="media/Footsteps.png" alt="Step 05" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 05: Save and publish the App
 ========================
-
-1.  Click **"File"** on the top menus in Edit interface of the app, then click
-    **Save** on the left menu, optionally you can input version note for save
-    and then **click Save**.
+## Publish the app
+1. Click **File** on the top menu in Edit interface of the app. Click **Save** from the left menu. Optionally you can input a version note and then click **Save**.
 
     ![](media/66da57fd4a7be2f93efb3b778ce14495.png)
 
-    Click **Publish**
+2. Click **Publish**
 
     ![](media/f2b242c79dda582ed9066b55c78fcc91.png)
 
-    Click **"Publish this version"** in the pop window.
+3. Click **"Publish this version"** in the pop window.
 
     ![](media/bb517b17748712cd9b5fa1b045e361af.png)
 
-    The app is now ready to be used.
+4. The app is now ready to be used.
 
 <img src="media/Footsteps.png" alt="Step 06" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 06: Create the custom connector
 ===========================
