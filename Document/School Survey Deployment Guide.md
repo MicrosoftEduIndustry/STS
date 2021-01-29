@@ -341,11 +341,11 @@ To update the data connections, follow the steps below:
    - "Schools"
    - "subcountries"
    - "Validates"
-1. Now click **Connect**. 
+2. Click on **Connect** button. 
    
    You have now added 5 of nine data connections.
 
-1. Follow the **same steps as above** and add other tables from corresponding Excel files. The list of relationship of tables and Excel files are listed below:
+3. Follow the **same steps as above** and add other tables from corresponding Excel files. The list of relationship of tables and Excel files are listed below:
 
     | Excel File         | Tables                                   |
     |--------------------|------------------------------------------|
@@ -354,7 +354,7 @@ To update the data connections, follow the steps below:
     | SurveyResults.xlsx | SurveyResults, GlobalSharedTime          |
     | Surveys.xlsx       | Surveys                                  |
 
-2.  Open screen **Tree view** from left menus, select screen AppConfiguration.
+4.  Open screen **Tree view** from left menus, select screen AppConfiguration.
 
     ![](media/6fef13af0aea04603737587825b66e18.png)
 
