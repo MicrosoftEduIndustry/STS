@@ -322,7 +322,7 @@ To update the data connections, follow the steps below:
 
     ![](media/2d7de7cccda1b30b2677d92529cbcf0e.png)
 
-    Go to the folder, and select **"AppData"** in its folder list.
+1. Go to the folder, and select **"AppData"** in its folder list.
 
     ![](media/58f778bfd3918e6cab35262b6b660c64.png)
 
@@ -330,25 +330,31 @@ To update the data connections, follow the steps below:
 
     ![](media/ebbcdb468d989f3d91442b8c50fe3ff3.png)
 
-    You’ll need to add tables from those four Excels above to the app. For example,
+1. You’ll need to add tables from those four Excels above to the app. For example,
     **select Schools.xlsx**.
 
-    ![](media/80999462c70b7804b0a452e4b8701a12.png)
+    ![](media/PowerAppDataExcelSchools.png)
 
-    **Choose table** "AppConfig"**,** "Schools", "Validates", then **Connect**. You
-    have now added three of nine data connections.
+1. Under **Choose a table** select:
+   - "AppConfig"
+   - "countries"
+   - "Schools"
+   - "subcountries"
+   - "Validates"
+1. Now click **Connect**. 
+   
+   You have now added 5 of nine data connections.
 
-    Follow the **same steps as above** and add other tables from corresponding Excel
-    files. The list of relationship of tables and Excel files are listed below.
+1. Follow the **same steps as above** and add other tables from corresponding Excel files. The list of relationship of tables and Excel files are listed below:
 
     | Excel File         | Tables                                   |
     |--------------------|------------------------------------------|
-    | Schools.xlsx       | Schools, Validates, AppConfig            |
+    | Schools.xlsx       | AppConfig, countries, Schools, Validates, subcountries, Validates            |
     | SurveyContent.xlsx | Questions, QuestionItems, QuestionGroups |
     | SurveyResults.xlsx | SurveyResults, GlobalSharedTime          |
     | Surveys.xlsx       | Surveys                                  |
 
-5.  Open screen **Tree view** from left menus, select screen AppConfiguration.
+2.  Open screen **Tree view** from left menus, select screen AppConfiguration.
 
     ![](media/6fef13af0aea04603737587825b66e18.png)
 
