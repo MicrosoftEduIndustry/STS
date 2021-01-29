@@ -422,19 +422,26 @@ In the next steps, you will save and publish the app.
 
 <img src="media/Footsteps.png" alt="Step 06" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 06: Create the custom connector
 ===========================
+In these next steps, you will create a custom connector. This connection will be used in the Flow to write back any survey data you decide to share globally.
 
-1.  Open <https://make.powerapps.com> , on the left menu list, collapse Data,
-    Click Custom Connectors.
+To create the custom connector follow the steps below:
+
+1.  Open <https://make.powerapps.com>. From the left menu, collapse **Data** and click on **Custom Connectors**.
 
     ![](media/92d21c4e3bc356ce5b5f268c9387ad98.png)
 
-2.  In the right, collapse New custom connector, then choose Import an OpenAPI
-    file.
+2.  In the right, collapse **New custom connector**. Choose **Import an OpenAPI
+    file**.
 
     ![](media/8f74def55cf043eedf5327b6e13cb43d.png)
 
-3.  In the pop window, input Connector name "UploadJSONToAzure" [DO NOT USE
-    OTHER NAMES], click Import to choose "UploadJSONToAzure.swagger.json" from where you put it in your computer. Then click Continue.
+3.  In the popup window:
+    1.  Set the **Connector name** to **UploadJSONToAzure** 
+    [DO NOT USE ANY OTHER NAMES]
+    
+    1. Click **Import** and browse for the **UploadJSONToAzure.swagger.json** file you downloaded in the prerequisite steps that you saved to your computer.
+   
+    2. Click **Continue**.
 
     ![](media/63e8c07bd3fd2e1bbe813c070ef2188b.png)
 
@@ -442,58 +449,55 @@ In the next steps, you will save and publish the app.
 
     ![](media/0bc25efb5dceb8cddbc23b4f85481ac6.png)
 
-    Wait for a few minutes until you see the screen again, it’s done.
+1. Wait for a few minutes until the screen finishes updating and then it’s done.
 
 <img src="media/Footsteps.png" alt="Step 07" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 07: Create a connection to the custom connector
 ===========================================
 
-1.  Still in <https://make.powerapps.com> , in the left menu list, go
-    Data-\>Connections
+1.  Still in <https://make.powerapps.com>, from the left menu, go to **Data** > **Connections**
 
     ![](media/85fa9f9b4ff5d2bd9f07d863a987d490.png)
 
-2.  In connections page, click New connection.
+2.  In connections page, click **New connection**.
 
     ![](media/430da6a72f001bac29d3aab23d5d4208.png)
 
-3.  In next page, input "UploadJSONToAzure" to search the connector you created
-    in previous steps on top right corner. You’ll see it in list below. Then
-    click the add icon in the right.
+3.  In next page, type **UploadJSONToAzure** to search the connector you created
+    in previous steps on top right corner. You should see it listed in the list
+    
+1. Click the **add +** icon in the right.
 
     ![](media/bdb0d7f8feb4f3c4bcfb2691b6599989.png)
 
-4.  In the pop window, click Create.
+1.  In the pop window, click **Create**.
 
     ![](media/bdb443fff3b6237ff84bccea2ad20484.png)
 
-    Wait for a few seconds, you’ll be redirected to connections page and a new
-    connection is added. Done.
+1. Wait for a few seconds. You’ll be redirected to connections page and the new connection is added.
 
 <img src="media/Footsteps.png" alt="Step 08" width="30" style="max-width:100%;vertical-align:middle;padding-bottom:3px;"> Step 08: Import the scheduled Flow
 =========================
 
-There are **two flow** in the app, one is an **Instant type**, the other is a
-**Scheduled type**. The instant flow is packed into app’s package, the scheduled
-one is not which means that you need to use the **zip package** to **import** it
-into your environment.
+There are **two flows** in the app: one is an **Instant type** and the other is a
+**Scheduled type**. The instant flow is packed into app’s package and the scheduled one is not which means you'll need to use the **zip package** to **import** it into your environment.
 
-1.  Open <https://flow.microsoft.com/> in a browser, sign in with you work
-    account.
+1.  Open <https://flow.microsoft.com/> in the browser and sign in with your work
+    account if prompted.
 
-2.  Go to My Flows, **Click Import**.
+2.  Go to **My Flows**, click **Import**.
 
     ![](media/9e80b169f38e00d32602e3ee40c177a9.png)
 
 3.  **Select the flow file** "WriteSurveyToJSON.zip" from [project
-    file](#prerequisites) , Upload.
+    file](#prerequisites) , and click **Upload**.
 
     ![](media/ee22f3b98d7bfb6a0dc0170c26814335.png)
 
-4.  Make sure it looks like below:
+4.  Make sure it looks similar to below:
 
     ![](media/4d0a0b2f7ad4efcf94700a4d320087a8.png)
 
-5.  **Update connections** for Related resources in this flow.
+5.  **Update connections** for related resources in this flow.
 
 6.  Click **"Select during import"** on each item, if there are already created
     connections that exist on the right pop up then select a connection with the
