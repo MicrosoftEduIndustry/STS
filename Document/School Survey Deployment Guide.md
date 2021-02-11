@@ -176,7 +176,7 @@ Please follow the steps below to upload the files manually to OneDrive for Busin
 
 2.  Select **Azure Active Directory**.
 
-    ![](media/0d699aebbc7ed2c59c04b8b0b30f1831.png)
+    ![](media/AzureADLeftMenu.png)
 
 3.  Select **Groups**, then click **+ New group**.
 
