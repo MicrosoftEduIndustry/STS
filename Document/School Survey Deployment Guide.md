@@ -184,35 +184,37 @@ Please follow the steps below to upload the files manually to OneDrive for Busin
 
     ![](media/f0e0777978730206963bdb854e8d0507.png)
 
-4.  Set **Group type** to **Security**.
+4. Continue with the following to create the New Group:
+   
+   1. Set **Group type** to **Security**.
+   2. In the **Group name** textbox, enter **SchoolSurveyAdmin**.
 
-5.  In the **Group name** textbox, enter **SchoolSurveyAdmin**.
-
-    > **NOTE:** If you change the Group name to be something other than
+        > **NOTE:** If you change the Group name to be something other than
     SchoolSurveyAdmin you’ll have to update it in Power App. Therefore we advise you set it as SchoolSurveyAdmin.
 
-6.  Add an optional **description** if preferred.
-
-7.  You can add members to this group in this dialog or add them after the
+   3.  Add an optional **Group description** if preferred.
+   
+   4. Leave **Azure AD roles can be assigned...** to **No**.
+   
+   5. Ensure **Membership type** is set to **Assignment**.
+   
+   6. You can add members to this group in this dialog or add them after the
     group is created. To add members to this group, click on **No members selected**.
 
-    ![](media/488a165dd3ec0734004f6160b9740472.png)
+    ![](media/AzureADCreateNewGroup.png)
 
-8.  Add members to the group you created. If you didn’t add members when you
-    created the group, or if you need to add new members in the future, follow
-    these steps.
+### Adding members to Azure AD group
+7. From the **Add members** dialog, proceed with the following to add members to the group:
 
-9.  Go to the group list, search and find the group, select the group, and
-    finally, click **Members**.
+   1. **Search** for the member you want to add.
+   
+   2. **Click** on the name.
+   
+   3. Repeat the steps until you have all the members you would like to add under the **Selected items** section.
+   
+   4. Click **Select** to add them to the group.
 
-    ![](media/2ec57c530ae6cc20c8f6b3bd8c31689b.png)
-
-10.  Click **+ Add members**, then search for and select a member in your
-    organization to add.
-
-    ![](media/b4b8910faf133a23033be87963a239bf.png)
-
-11.  Click **Select** to add them to the group.
+    ![](media/AzureADAddMembers.png)
 
 ---
 
@@ -228,17 +230,13 @@ Next, install the Power App in the target environment.
 
     ![](media/eeec895c3206dd79de9b7e1226ae1b52.png)
 
-3.  Browse to the **SchoolTransformationSurvery.zip** file in the project files
-    you downloaded and select it, then click **Upload**.
+3.  Browse to the **SchoolTransformationSurvery.zip** file in the project files you downloaded and select it, then click **Upload**.
 
     ![](media/a994e41c61938c96b05a44fe3f55caa2.png)
 
-    After a few moments, you’ll see the import package screen that looks like
-    the one show below. Make sure there are two items in the package, one is the
-    Power App, the other is the Flow which the Power App uses.
+    After a few moments, you’ll see the import package screen that looks like the one show below. Make sure there are two items in the package, one is the Power App, the other is the Flow which the Power App uses.
 
-    **NOTE:** Since this package is new to your environment, ensure the **IMPORT SETUP** values are set to **Create as new** for **BOTH** the
-    Power App and Flow.
+    **NOTE:** Since this package is new to your environment, ensure the **IMPORT SETUP** values are set to **Create as new** for **BOTH** the Power App and Flow.
 
     ![](media/STSImportPackageNew.png)
 
