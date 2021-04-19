@@ -614,7 +614,7 @@ On Flow interface
 
     **Key Value**: 1
 
-11. **Save and Test the flow**. Make sure the flow runs successfully.
+11. **Save and Test the flow**. First turn the flow on and then test. To test choose, the manual option. Make sure the flow runs successfully.
     
     ![](media/cd872768ee2b4348ff1dbd6976d14a86.png)
 
