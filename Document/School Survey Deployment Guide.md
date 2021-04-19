@@ -196,7 +196,7 @@ Please follow the steps below to upload the files manually to OneDrive for Busin
    
    4. Leave **Azure AD roles can be assigned...** to **No**.
    
-   5. Ensure **Membership type** is set to **Assignment**.
+   5. Ensure **Membership type** is set to **Assigned**.
    
    6. You can add members to this group in this dialog or add them after the
     group is created. To add members to this group, click on **No members selected**.
@@ -304,7 +304,7 @@ To update the data connections, follow the steps below:
 
     ![](media/STSImportPackageRemoveData.png)
 
-2.  **Remove** the twelve **OneDrive** connected data sources showed in previous step by **clicking
+2.  **Remove** all the **OneDrive** connected data sources showed in previous step by **clicking
     ellipses** for each one of the data connection and choose **Remove** in pop-up menu.
 
     After you remove the **OneDrive for Business** connections, you will see red error icons on your Power App. This is to be expected.
